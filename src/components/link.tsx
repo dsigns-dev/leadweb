@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import { forwardRef, type ComponentProps } from "react";
 import { cn } from "@/lib/utils";
+import { DYNAMIC_HERO_IMAGES } from "@/content/industry-images";
 
 export type LinkProps = Omit<ComponentProps<typeof NextLink>, "href"> & {
   to?: string;
@@ -55,12 +56,41 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
       ...(isActive && activeProps?.style ? activeProps.style : {}),
     };
 
+    const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (props.onMouseEnter) {
+        props.onMouseEnter(e);
+      }
+
+      // Preload target industry landing page hero WebP image on hover
+      if (resolvedHref && resolvedHref.includes("/industries/")) {
+        const match = resolvedHref.match(/\/industries\/([^?#]+)/);
+        if (match) {
+          const slug = match[1];
+          const loader = DYNAMIC_HERO_IMAGES[slug];
+          if (loader) {
+            loader()
+              .then((mod) => {
+                const src = mod.default?.src;
+                if (src) {
+                  const img = new Image();
+                  img.src = src;
+                }
+              })
+              .catch(() => {
+                // ignore load failures (e.g. offline)
+              });
+          }
+        }
+      }
+    };
+
     return (
       <NextLink
         ref={ref}
         href={resolvedHref || "/"}
         className={mergedClassName}
         style={mergedStyle}
+        onMouseEnter={handleMouseEnter}
         {...props}
       />
     );

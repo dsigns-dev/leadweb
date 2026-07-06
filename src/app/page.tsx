@@ -5,6 +5,7 @@ import { ImageTiles } from "@/components/image-tiles";
 import { industries } from "@/content/industries";
 import { Link } from "@/components/link";
 import { SmoothImage } from "@/components/smooth-image";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero.webp";
 
 export default function HomePage() {
@@ -146,10 +147,17 @@ export default function HomePage() {
             <Link
               key={i.slug}
               to={`/industries/${i.slug}`}
-              className="group rounded-xl border border-hairline bg-surface/40 p-4 transition-colors hover:border-brand/60"
+              className="group flex items-center justify-between gap-4 rounded-xl border border-hairline bg-surface/40 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/60 hover:shadow-sm"
             >
-              <div className="text-sm font-medium text-foreground">{i.name}</div>
-              <div className="mt-1 text-xs text-ink-dim">Digital marketing playbook</div>
+              <div>
+                <div className="text-sm font-semibold text-foreground group-hover:text-brand transition-colors">
+                  {i.name}
+                </div>
+                <div className="mt-1 text-xs text-ink-dim">Digital marketing playbook</div>
+              </div>
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand text-white shadow-sm transition-all duration-300 group-hover:scale-110">
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+              </div>
             </Link>
           ))}
         </div>
