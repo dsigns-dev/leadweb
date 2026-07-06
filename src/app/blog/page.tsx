@@ -89,7 +89,7 @@ export default function BlogIndexPage() {
                 width={1280}
                 height={800}
                 priority
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                className="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.03]"
               />
             </div>
           </Link>
@@ -116,7 +116,7 @@ export default function BlogIndexPage() {
                   alt={p.title}
                   width={1280}
                   height={800}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  className="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.04]"
                 />
               </div>
               <div className="flex flex-1 flex-col p-6">

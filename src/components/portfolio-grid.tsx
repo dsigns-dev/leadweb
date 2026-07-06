@@ -14,7 +14,7 @@ export function PortfolioGrid({ limit }: { limit?: number }) {
             <SmoothImage
               src={p.image}
               alt={`${p.name} — case study`}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
             />
           </div>
           <figcaption className="p-5">

@@ -46,7 +46,7 @@ export function ImageTiles({
               alt=""
               width={1280}
               height={960}
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
             />
             <div
               className={`absolute inset-0 bg-gradient-to-br ${TONE[t.tone]} mix-blend-multiply`}

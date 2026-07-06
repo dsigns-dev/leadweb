@@ -104,7 +104,7 @@ export function BlogPostView({ post }: { post: BlogPost }) {
                         alt={rp.title}
                         width={1280}
                         height={800}
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                        className="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.04]"
                       />
                     </div>
                     <div className="p-5">
