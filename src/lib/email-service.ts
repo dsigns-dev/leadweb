@@ -24,6 +24,7 @@ export interface LeadData {
   utmContent?: string;
   ipAddress?: string;
   referer?: string;
+  pageUrl?: string;
 }
 
 interface BrevoRecipient {
