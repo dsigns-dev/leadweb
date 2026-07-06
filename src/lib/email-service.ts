@@ -17,6 +17,13 @@ export interface LeadData {
   website?: string;
   message?: string;
   timeline?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmTerm?: string;
+  utmContent?: string;
+  ipAddress?: string;
+  referer?: string;
 }
 
 interface BrevoRecipient {

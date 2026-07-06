@@ -28,11 +28,24 @@ export function LeadForm({ config }: { config: LeadFormConfig }) {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
 
+    // Capture browser metadata for tracking
+    const params = new URLSearchParams(window.location.search);
+
     try {
       const res = await fetch("/api/leads/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, source: config.kind }),
+        body: JSON.stringify({
+          ...data,
+          source: window.location.href,
+          service: data.service || config.kind,
+          utmSource: params.get("utm_source") || "",
+          utmMedium: params.get("utm_medium") || "",
+          utmCampaign: params.get("utm_campaign") || "",
+          utmTerm: params.get("utm_term") || "",
+          utmContent: params.get("utm_content") || "",
+          referer: document.referrer || "",
+        }),
       });
 
       const result = await res.json();

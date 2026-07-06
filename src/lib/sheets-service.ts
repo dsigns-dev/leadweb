@@ -20,6 +20,13 @@ interface GoogleSheetPayload {
   message: string;
   timeline: string;
   submittedAt: string;
+  utmSource: string;
+  utmMedium: string;
+  utmCampaign: string;
+  utmTerm: string;
+  utmContent: string;
+  ipAddress: string;
+  referer: string;
 }
 
 interface WebhookResponse {
@@ -62,6 +69,13 @@ export async function saveToGoogleSheet(lead: LeadData): Promise<WebhookResponse
     message: lead.message || "",
     timeline: lead.timeline || "",
     submittedAt: new Date().toISOString(),
+    utmSource: lead.utmSource || "",
+    utmMedium: lead.utmMedium || "",
+    utmCampaign: lead.utmCampaign || "",
+    utmTerm: lead.utmTerm || "",
+    utmContent: lead.utmContent || "",
+    ipAddress: lead.ipAddress || "",
+    referer: lead.referer || "",
   };
 
   const response = await fetch(config.webhookUrl, {
