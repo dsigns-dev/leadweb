@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "check:location-meta": "tsx scripts/check-location-meta.ts",
-    "build": "tsx scripts/check-location-meta.ts && next build",
+    "build": "tsx scripts/check-location-meta.ts && eslint . && next build",
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier --write ."
