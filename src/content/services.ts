@@ -373,14 +373,14 @@ export const services: ServiceContent[] = [
     formSubtitle:
       "Tell us your industry, service area and the volume you want. We'll come back with a per-lead price and start date.",
     carouselImages: [
-      "/pay-per-lead/carousel-1.jpg",
-      "/pay-per-lead/carousel-2.jpg",
-      "/pay-per-lead/carousel-3.jpg",
-      "/pay-per-lead/carousel-4.jpg",
-      "/pay-per-lead/carousel-5.jpg",
-      "/pay-per-lead/carousel-6.jpg",
-      "/pay-per-lead/carousel-7.jpg",
-      "/pay-per-lead/carousel-8.jpg",
+      "/pay-per-lead/carousel-1.webp",
+      "/pay-per-lead/carousel-2.webp",
+      "/pay-per-lead/carousel-3.webp",
+      "/pay-per-lead/carousel-4.webp",
+      "/pay-per-lead/carousel-5.webp",
+      "/pay-per-lead/carousel-6.webp",
+      "/pay-per-lead/carousel-7.webp",
+      "/pay-per-lead/carousel-8.webp",
     ],
     whySection: {
       heading: "Why Pay Per Lead?",
@@ -401,8 +401,8 @@ export const services: ServiceContent[] = [
       body: "We discuss your keywords of interest, look at the competition and plan a strategy to gain top spot on search results and attack with multiple domains and websites. You only pay for the results! If we get leads for you (Obviously each and every lead is tracked and reported ). Essentially, you avoid paying for the process and you can start only paying for results!",
       resultHeading: "Let the Results speak for Us",
       resultImages: [
-        { src: "/pay-per-lead/result-rankings.jpg", alt: "Leadweb ranking report" },
-        { src: "/pay-per-lead/result-calls.jpg", alt: "Leadweb call tracking report" },
+        { src: "/pay-per-lead/result-rankings.webp", alt: "Leadweb ranking report" },
+        { src: "/pay-per-lead/result-calls.webp", alt: "Leadweb call tracking report" },
       ],
     },
     sectionHeadings: {

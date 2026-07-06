@@ -72,13 +72,7 @@ function SiteHeader() {
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link to="/" aria-label="Leadweb home" className="flex items-center">
           <div className="flex flex-col items-center leading-none">
-            <img
-              src="https://www.leadweb.com.au/wp-content/uploads/2023/04/LEADWEB-WEBSITE-LOGO-1-213x41.png"
-              alt="Leadweb"
-              width={170}
-              height={33}
-              className="h-8 w-auto"
-            />
+            <img src="/logo.webp" alt="Leadweb" width={170} height={33} className="h-8 w-auto" />
             <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-foreground">
               Marketing
             </span>
@@ -126,13 +120,7 @@ function SiteFooter() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex flex-col items-center leading-none">
-            <img
-              src="https://www.leadweb.com.au/wp-content/uploads/2023/04/LEADWEB-WEBSITE-LOGO-1-213x41.png"
-              alt="Leadweb"
-              width={170}
-              height={33}
-              className="h-8 w-auto"
-            />
+            <img src="/logo.webp" alt="Leadweb" width={170} height={33} className="h-8 w-auto" />
             <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-foreground">
               Marketing
             </span>

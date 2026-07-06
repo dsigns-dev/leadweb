@@ -4,7 +4,8 @@ import { PortfolioGrid } from "@/components/portfolio-grid";
 import { ImageTiles } from "@/components/image-tiles";
 import { industries } from "@/content/industries";
 import { Link } from "@/components/link";
-import heroImage from "@/assets/hero.jpg";
+import { SmoothImage } from "@/components/smooth-image";
+import heroImage from "@/assets/hero.webp";
 
 export default function HomePage() {
   return (
@@ -47,11 +48,12 @@ export default function HomePage() {
                 className="relative overflow-hidden shadow-2xl"
                 style={{ borderRadius: "48% 12% 42% 12% / 18% 42% 18% 42%" }}
               >
-                <img
+                <SmoothImage
                   src={heroImage.src}
                   alt="Australian tradies on a job site — the kind of business Leadweb generates leads for"
                   width={1600}
                   height={1280}
+                  priority
                   className="h-full w-full object-cover"
                 />
                 <div

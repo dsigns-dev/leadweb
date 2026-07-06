@@ -1,6 +1,7 @@
 import { Link } from "@/components/link";
 import { categories, tags } from "@/content/blog";
 import { coverFor } from "@/content/blog-covers";
+import { SmoothImage } from "@/components/smooth-image";
 
 type Props = {
   activeCategory?: string;
@@ -105,10 +106,9 @@ export function PostGrid({
           className="group flex flex-col overflow-hidden rounded-2xl border border-hairline bg-surface/40 transition-colors hover:border-brand/60"
         >
           <div className="aspect-[16/10] overflow-hidden bg-surface">
-            <img
+            <SmoothImage
               src={coverFor(p.slug)}
               alt={p.title}
-              loading="lazy"
               width={1280}
               height={800}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"

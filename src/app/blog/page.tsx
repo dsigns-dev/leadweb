@@ -6,6 +6,7 @@ import { blogListJsonLd } from "@/lib/jsonld";
 import { BlogFilterBar } from "@/components/blog-filter-bar";
 import { coverFor } from "@/content/blog-covers";
 import { Link } from "@/components/link";
+import { SmoothImage } from "@/components/smooth-image";
 
 export const metadata: Metadata = {
   title: "Blog — Lead Generation, Google Ads & SEO Insights | Leadweb",
@@ -82,11 +83,12 @@ export default function BlogIndexPage() {
               </span>
             </div>
             <div className="order-1 overflow-hidden rounded-2xl md:order-2">
-              <img
+              <SmoothImage
                 src={coverFor(featured.slug)}
                 alt={featured.title}
                 width={1280}
                 height={800}
+                priority
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
@@ -109,10 +111,9 @@ export default function BlogIndexPage() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-hairline bg-surface/40 transition-colors hover:border-brand/60"
             >
               <div className="aspect-[16/10] overflow-hidden bg-surface">
-                <img
+                <SmoothImage
                   src={coverFor(p.slug)}
                   alt={p.title}
-                  loading="lazy"
                   width={1280}
                   height={800}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"

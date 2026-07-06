@@ -6,8 +6,9 @@ import { useMemo, useState } from "react";
 import type { BlogPost, BlogSection } from "@/content/blog";
 import { author, posts, categories, slugifyTaxonomy } from "@/content/blog";
 import { Breadcrumbs, breadcrumbJsonLd } from "@/components/breadcrumbs";
-import sidebarPhoto from "@/assets/blog/sidebar-enquiry.jpg";
+import sidebarPhoto from "@/assets/blog/sidebar-enquiry.webp";
 import { coverFor } from "@/content/blog-covers";
+import { SmoothImage } from "@/components/smooth-image";
 
 export function BlogPostView({ post }: { post: BlogPost }) {
   const related = posts
@@ -50,11 +51,12 @@ export function BlogPostView({ post }: { post: BlogPost }) {
           <AuthorInline />
 
           <div className="mt-8 overflow-hidden rounded-2xl border border-hairline">
-            <img
+            <SmoothImage
               src={coverFor(post.slug)}
               alt={post.title}
               width={1280}
               height={800}
+              priority
               className="h-auto w-full object-cover"
             />
           </div>
@@ -97,10 +99,9 @@ export function BlogPostView({ post }: { post: BlogPost }) {
                     className="group overflow-hidden rounded-2xl border border-hairline bg-surface/40 transition-colors hover:border-brand/60"
                   >
                     <div className="aspect-[16/10] overflow-hidden bg-surface">
-                      <img
+                      <SmoothImage
                         src={coverFor(rp.slug)}
                         alt={rp.title}
-                        loading="lazy"
                         width={1280}
                         height={800}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
@@ -263,10 +264,9 @@ function SectionRenderer({ section }: { section: BlogSection }) {
 function AuthorInline() {
   return (
     <div className="mt-8 flex items-center gap-3 border-y border-hairline py-4">
-      <img
+      <SmoothImage
         src={author.photo}
         alt={author.name}
-        loading="lazy"
         width={48}
         height={48}
         className="h-12 w-12 rounded-full object-cover"
@@ -283,10 +283,9 @@ function AuthorCard() {
   return (
     <div className="mt-14 rounded-2xl border border-hairline bg-surface/50 p-6 md:p-8">
       <div className="flex flex-col gap-5 md:flex-row md:items-start">
-        <img
+        <SmoothImage
           src={author.photo}
           alt={author.name}
-          loading="lazy"
           width={112}
           height={112}
           className="h-24 w-24 flex-none rounded-full object-cover md:h-28 md:w-28"
@@ -317,10 +316,9 @@ function AuthorCard() {
 function SidebarEnquiry() {
   return (
     <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-brand/20">
-      <img
+      <SmoothImage
         src={sidebarPhoto.src}
         alt="Australian tradie taking a booking call"
-        loading="lazy"
         width={640}
         height={720}
         className="absolute inset-0 h-full w-full object-cover"
@@ -351,10 +349,9 @@ function SidebarAuthor() {
   return (
     <div className="mt-6 rounded-2xl border border-hairline bg-background p-5">
       <div className="flex items-center gap-3">
-        <img
+        <SmoothImage
           src={author.photo}
           alt={author.name}
-          loading="lazy"
           width={56}
           height={56}
           className="h-14 w-14 rounded-full object-cover"
@@ -451,10 +448,9 @@ function SidebarArchive({ currentSlug }: { currentSlug: string }) {
                 params={{ slug: p.slug }}
                 className="flex gap-3 px-5 py-3 transition-colors hover:bg-surface/60"
               >
-                <img
+                <SmoothImage
                   src={coverFor(p.slug)}
                   alt=""
-                  loading="lazy"
                   width={64}
                   height={64}
                   className="h-14 w-14 flex-none rounded-md object-cover"
