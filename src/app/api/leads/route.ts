@@ -55,8 +55,29 @@ function validateLeadPayload(body: unknown): ValidationResult | ValidationError 
       website: typeof data.website === "string" ? data.website.trim() : undefined,
       message: typeof data.message === "string" ? data.message.trim() : undefined,
       timeline: typeof data.timeline === "string" ? data.timeline.trim() : undefined,
+      utmSource: typeof data.utmSource === "string" ? data.utmSource.trim() : undefined,
+      utmMedium: typeof data.utmMedium === "string" ? data.utmMedium.trim() : undefined,
+      utmCampaign: typeof data.utmCampaign === "string" ? data.utmCampaign.trim() : undefined,
+      utmTerm: typeof data.utmTerm === "string" ? data.utmTerm.trim() : undefined,
+      utmContent: typeof data.utmContent === "string" ? data.utmContent.trim() : undefined,
+      referer: typeof data.referer === "string" ? data.referer.trim() : undefined,
     },
   };
+}
+
+// ── Helpers ──────────────────────────────────────────────────────
+
+/**
+ * Extracts the client IP address from request headers.
+ * Works on Vercel, Cloudflare, and standard reverse proxies.
+ */
+function getClientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) {
+    // x-forwarded-for can contain multiple IPs; the first is the client
+    return forwarded.split(",")[0].trim();
+  }
+  return request.headers.get("x-real-ip") || "";
 }
 
 // ── Route Handler ────────────────────────────────────────────────
@@ -72,6 +93,9 @@ export async function POST(request: Request) {
     }
 
     const lead = validation.data;
+
+    // ── Attach server-side metadata ────────────────────────────
+    lead.ipAddress = getClientIp(request);
 
     // ── Fire both services in parallel ─────────────────────────
     //    Each is wrapped in its own try/catch so one failure
