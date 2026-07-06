@@ -29,7 +29,7 @@ export function SiteChrome({ children }: { children: ReactNode }) {
 
       {/* Mobile Menu Overlay */}
       {menuOpen ? (
-        <div className="fixed inset-0 z-50 bg-background flex flex-col md:hidden animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-50 bg-background flex flex-col lg:hidden animate-in fade-in duration-200">
           {/* Header row inside menu */}
           <div className="container-page flex h-16 w-full items-center justify-between gap-6 border-b border-hairline">
             <Link
@@ -142,7 +142,7 @@ function SiteHeader({ open, setOpen }: { open: boolean; setOpen: (open: boolean)
           </div>
         </Link>
         <MegaMenu />
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <Link
             to="/contact-us"
             className="rounded-full bg-brand px-8 py-2.5 text-base font-semibold text-brand-foreground transition-transform hover:-translate-y-0.5"
@@ -154,7 +154,7 @@ function SiteHeader({ open, setOpen }: { open: boolean; setOpen: (open: boolean)
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
-          className="rounded-md border border-hairline p-2 md:hidden"
+          className="rounded-md border border-hairline p-2 lg:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>

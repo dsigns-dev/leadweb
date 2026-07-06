@@ -38,7 +38,7 @@ export default function HomePage() {
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <CTAButton to="/contact-us">Book a 20-min strategy call</CTAButton>
-                <CTAButton to="/services" variant="ghost">
+                <CTAButton to="/services" variant="ghost-white">
                   See how we work
                 </CTAButton>
               </div>

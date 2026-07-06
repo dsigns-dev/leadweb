@@ -53,17 +53,24 @@ export function CTAButton({
   to,
   href,
   children,
+  className = "",
   variant = "primary",
 }: {
   to?: string;
   href?: string;
   children: ReactNode;
-  variant?: "primary" | "ghost";
+  className?: string;
+  variant?: "primary" | "ghost" | "ghost-white";
 }) {
-  const cls =
+  const baseCls =
     variant === "primary"
       ? "inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-medium text-brand-foreground shadow-lg shadow-brand/20 transition-transform hover:-translate-y-0.5"
-      : "inline-flex items-center gap-2 rounded-full border border-hairline px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand hover:text-brand";
+      : variant === "ghost-white"
+        ? "inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-medium text-white transition-all hover:border-white hover:bg-white/10 active:scale-[0.98]"
+        : "inline-flex items-center gap-2 rounded-full border border-hairline px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-brand hover:text-brand";
+
+  const cls = `${baseCls} ${className}`.trim();
+
   if (to) {
     return (
       <Link to={to} className={cls}>
