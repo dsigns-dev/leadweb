@@ -1,7 +1,8 @@
-import tileAnalytics from "@/assets/tile-analytics.jpg";
-import tileCall from "@/assets/tile-call.jpg";
-import tileTeam from "@/assets/tile-team.jpg";
+import tileAnalytics from "@/assets/tile-analytics.webp";
+import tileCall from "@/assets/tile-call.webp";
+import tileTeam from "@/assets/tile-team.webp";
 import { Section, H2 } from "@/components/primitives";
+import { SmoothImage } from "@/components/smooth-image";
 
 export type Tile = {
   kicker: string;
@@ -40,13 +41,12 @@ export function ImageTiles({
             key={t.title}
             className="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]"
           >
-            <img
+            <SmoothImage
               src={t.image ?? IMAGES[i % IMAGES.length].src}
               alt=""
-              loading="lazy"
               width={1280}
               height={960}
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
             />
             <div
               className={`absolute inset-0 bg-gradient-to-br ${TONE[t.tone]} mix-blend-multiply`}

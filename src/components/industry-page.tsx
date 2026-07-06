@@ -7,18 +7,19 @@ import { Link } from "@/components/link";
 import { services } from "@/content/services";
 import { ArrowRight } from "lucide-react";
 import { ImageTiles } from "@/components/image-tiles";
-import tradieImg from "@/assets/industries/tradie.jpg";
-import dentistsImg from "@/assets/industries/dentists.jpg";
-import doctorImg from "@/assets/industries/doctor.jpg";
-import financialImg from "@/assets/industries/financial-services.jpg";
-import fitnessImg from "@/assets/industries/fitness.jpg";
-import lawImg from "@/assets/industries/law-firms.jpg";
-import nonProfitImg from "@/assets/industries/non-profits.jpg";
-import proServicesImg from "@/assets/industries/professional-services.jpg";
-import realEstateImg from "@/assets/industries/real-estates.jpg";
-import restaurantImg from "@/assets/industries/restaurant.jpg";
-import smallBizImg from "@/assets/industries/small-businesses.jpg";
-import beautyImg from "@/assets/industries/beauty-skincare.jpg";
+import { SmoothImage } from "@/components/smooth-image";
+import tradieImg from "@/assets/industries/tradie.webp";
+import dentistsImg from "@/assets/industries/dentists.webp";
+import doctorImg from "@/assets/industries/doctor.webp";
+import financialImg from "@/assets/industries/financial-services.webp";
+import fitnessImg from "@/assets/industries/fitness.webp";
+import lawImg from "@/assets/industries/law-firms.webp";
+import nonProfitImg from "@/assets/industries/non-profits.webp";
+import proServicesImg from "@/assets/industries/professional-services.webp";
+import realEstateImg from "@/assets/industries/real-estates.webp";
+import restaurantImg from "@/assets/industries/restaurant.webp";
+import smallBizImg from "@/assets/industries/small-businesses.webp";
+import beautyImg from "@/assets/industries/beauty-skincare.webp";
 
 const HERO_IMAGES: Record<string, { src: string }> = {
   "digital-marketing-for-tradie": tradieImg,
@@ -50,12 +51,12 @@ export function IndustryPage({ content }: { content: IndustryContent }) {
             <H1>{content.h1}</H1>
             {heroImage ? (
               <div className="mt-8 overflow-hidden rounded-2xl border border-hairline shadow-lg">
-                <img
+                <SmoothImage
                   src={heroImage.src}
                   alt={`Digital marketing for ${content.name.toLowerCase()} — Leadweb`}
                   width={1600}
                   height={1000}
-                  fetchPriority="high"
+                  priority
                   className="h-full w-full object-cover aspect-[16/10]"
                 />
               </div>

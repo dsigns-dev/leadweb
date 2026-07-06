@@ -6,13 +6,77 @@ import { Menu, X, Phone, ChevronUp } from "lucide-react";
 import { MegaMenu, MobileNav } from "@/components/mega-menu";
 
 export function SiteChrome({ children }: { children: ReactNode }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
-      <SiteHeader />
+      <SiteHeader open={menuOpen} setOpen={setMenuOpen} />
       <main className="flex-1">{children}</main>
       <SiteFooter />
       <FloatingCallButton />
       <BackToTopButton />
+
+      {/* Mobile Menu Overlay */}
+      {menuOpen ? (
+        <div className="fixed inset-0 z-50 bg-background flex flex-col md:hidden animate-in fade-in duration-200">
+          {/* Header row inside menu */}
+          <div className="container-page flex h-16 w-full items-center justify-between gap-6 border-b border-hairline">
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              aria-label="Leadweb home"
+              className="flex items-center"
+            >
+              <div className="flex flex-col items-center leading-none">
+                <img
+                  src="/logo.webp"
+                  alt="Leadweb"
+                  width={170}
+                  height={33}
+                  className="h-8 w-auto"
+                />
+                <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-foreground">
+                  Marketing
+                </span>
+              </div>
+            </Link>
+            <button
+              type="button"
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+              className="rounded-md border border-hairline p-2"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+          {/* Menu contents */}
+          <div className="flex-1 overflow-y-auto container-page w-full py-6 flex flex-col pb-20">
+            <div className="flex-1">
+              <MobileNav onNavigate={() => setMenuOpen(false)} />
+            </div>
+            <div className="mt-8 pt-4 border-t border-hairline">
+              <Link
+                to="/contact-us"
+                onClick={() => setMenuOpen(false)}
+                className="inline-flex w-full justify-center rounded-full bg-brand px-5 py-3.5 text-base font-semibold text-brand-foreground shadow-lg shadow-brand/20 active:translate-y-0.5 transition-transform"
+              >
+                Book a call
+              </Link>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -65,20 +129,13 @@ function BackToTopButton() {
   );
 }
 
-function SiteHeader() {
-  const [open, setOpen] = useState(false);
+function SiteHeader({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
   return (
     <header className="sticky top-0 z-40 border-b border-hairline bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link to="/" aria-label="Leadweb home" className="flex items-center">
           <div className="flex flex-col items-center leading-none">
-            <img
-              src="https://www.leadweb.com.au/wp-content/uploads/2023/04/LEADWEB-WEBSITE-LOGO-1-213x41.png"
-              alt="Leadweb"
-              width={170}
-              height={33}
-              className="h-8 w-auto"
-            />
+            <img src="/logo.webp" alt="Leadweb" width={170} height={33} className="h-8 w-auto" />
             <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-foreground">
               Marketing
             </span>
@@ -96,26 +153,12 @@ function SiteHeader() {
         <button
           type="button"
           aria-label="Toggle menu"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen(!open)}
           className="rounded-md border border-hairline p-2 md:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </div>
-      {open ? (
-        <div className="border-t border-hairline md:hidden">
-          <div className="container-page py-4">
-            <MobileNav onNavigate={() => setOpen(false)} />
-            <Link
-              to="/contact-us"
-              onClick={() => setOpen(false)}
-              className="mt-4 inline-flex w-fit rounded-full bg-brand px-4 py-2 text-sm font-medium text-brand-foreground"
-            >
-              Book a call
-            </Link>
-          </div>
-        </div>
-      ) : null}
     </header>
   );
 }
@@ -126,13 +169,7 @@ function SiteFooter() {
       <div className="container-page grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex flex-col items-center leading-none">
-            <img
-              src="https://www.leadweb.com.au/wp-content/uploads/2023/04/LEADWEB-WEBSITE-LOGO-1-213x41.png"
-              alt="Leadweb"
-              width={170}
-              height={33}
-              className="h-8 w-auto"
-            />
+            <img src="/logo.webp" alt="Leadweb" width={170} height={33} className="h-8 w-auto" />
             <span className="mt-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-foreground">
               Marketing
             </span>

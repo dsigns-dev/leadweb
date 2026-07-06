@@ -1,13 +1,13 @@
-import leadGen from "@/assets/blog/covers/lead-gen.jpg";
-import ppl from "@/assets/blog/covers/ppl-vs-retainer.jpg";
-import googleAds from "@/assets/blog/covers/google-ads.jpg";
-import seo2026 from "@/assets/blog/covers/seo-2026.jpg";
-import strategy from "@/assets/blog/covers/strategy.jpg";
-import cpl from "@/assets/blog/covers/cpl-benchmarks.jpg";
-import localSeo from "@/assets/blog/covers/local-seo.jpg";
-import metaAds from "@/assets/blog/covers/meta-ads.jpg";
-import growth from "@/assets/blog/covers/growth.jpg";
-import websiteCro from "@/assets/blog/covers/website-cro.jpg";
+import leadGen from "@/assets/blog/covers/lead-gen.webp";
+import ppl from "@/assets/blog/covers/ppl-vs-retainer.webp";
+import googleAds from "@/assets/blog/covers/google-ads.webp";
+import seo2026 from "@/assets/blog/covers/seo-2026.webp";
+import strategy from "@/assets/blog/covers/strategy.webp";
+import cpl from "@/assets/blog/covers/cpl-benchmarks.webp";
+import localSeo from "@/assets/blog/covers/local-seo.webp";
+import metaAds from "@/assets/blog/covers/meta-ads.webp";
+import growth from "@/assets/blog/covers/growth.webp";
+import websiteCro from "@/assets/blog/covers/website-cro.webp";
 
 export const covers: Record<string, { src: string }> = {
   "lead-generation-for-australian-businesses": leadGen,
