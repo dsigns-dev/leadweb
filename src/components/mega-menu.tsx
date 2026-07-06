@@ -138,7 +138,7 @@ export function MegaMenu() {
   );
 
   return (
-    <nav className="hidden items-center gap-1 text-sm md:flex">
+    <nav className="hidden items-center gap-1 text-sm lg:flex">
       {panels.map((p) => (
         <div
           key={p.label}
