@@ -36,8 +36,9 @@ export default function ThankYouPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-lg text-balance text-lg text-ink-dim md:text-xl">
-            Your brief has successfully landed. A strategist will review it and
-            reach out within <strong>one business day</strong>.
+            Your brief has successfully landed. A strategist will review it and reach out within
+            {"  "}
+            <strong>one business day</strong>.
           </p>
 
           <hr className="mx-auto my-10 w-12 border-t-2 border-hairline" />
