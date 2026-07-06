@@ -37,7 +37,8 @@ export function LeadForm({ config }: { config: LeadFormConfig }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...data,
-          source: window.location.href,
+          source: config.kind,
+          pageUrl: window.location.href,
           service: data.service || config.kind,
           utmSource: params.get("utm_source") || "",
           utmMedium: params.get("utm_medium") || "",

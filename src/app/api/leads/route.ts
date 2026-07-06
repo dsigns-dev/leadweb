@@ -61,6 +61,7 @@ function validateLeadPayload(body: unknown): ValidationResult | ValidationError 
       utmTerm: typeof data.utmTerm === "string" ? data.utmTerm.trim() : undefined,
       utmContent: typeof data.utmContent === "string" ? data.utmContent.trim() : undefined,
       referer: typeof data.referer === "string" ? data.referer.trim() : undefined,
+      pageUrl: typeof data.pageUrl === "string" ? data.pageUrl.trim() : undefined,
     },
   };
 }

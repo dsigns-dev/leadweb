@@ -27,6 +27,7 @@ interface GoogleSheetPayload {
   utmContent: string;
   ipAddress: string;
   referer: string;
+  pageUrl: string;
 }
 
 interface WebhookResponse {
@@ -58,12 +59,12 @@ export async function saveToGoogleSheet(lead: LeadData): Promise<WebhookResponse
 
   const payload: GoogleSheetPayload = {
     secret: config.webhookSecret,
-    source: lead.source,
+    source: lead.pageUrl || lead.source,
     name: lead.name,
     email: lead.email,
     phone: lead.phone || "",
     company: lead.company || lead.business || "",
-    service: lead.service || "",
+    service: lead.service || lead.source || "",
     budget: lead.budget || "",
     website: lead.website || "",
     message: lead.message || "",
@@ -76,6 +77,7 @@ export async function saveToGoogleSheet(lead: LeadData): Promise<WebhookResponse
     utmContent: lead.utmContent || "",
     ipAddress: lead.ipAddress || "",
     referer: lead.referer || "",
+    pageUrl: lead.pageUrl || "",
   };
 
   const response = await fetch(config.webhookUrl, {
