@@ -1,6 +1,6 @@
 import { Link } from "@/components/link";
 import type { ReactNode } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, X } from "lucide-react";
 
 export function Section({
   children,
@@ -85,17 +85,50 @@ export function CTAButton({
   );
 }
 
-export function CheckList({ items }: { items: string[] }) {
+export function CheckList({
+  items,
+  variant = "brand",
+}: {
+  items: string[];
+  variant?: "brand" | "success" | "danger";
+}) {
   return (
-    <ul className="grid gap-3 md:grid-cols-2">
-      {items.map((it) => (
-        <li key={it} className="flex items-start gap-3 text-sm text-foreground">
-          <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-brand/15 text-brand">
-            <Check className="h-3 w-3" />
-          </span>
-          {it}
-        </li>
-      ))}
+    <ul className="grid gap-4 md:grid-cols-2">
+      {items.map((it) => {
+        let cardClass = "";
+        let circleClass = "";
+
+        if (variant === "danger") {
+          // Warning / Pain points: soft warm amber/orange tint (no cross, check only)
+          cardClass =
+            "bg-surface-2/20 border border-hairline/65 hover:border-amber-500/35 hover:shadow-[0_4px_20px_-4px_rgba(245,158,11,0.04)]";
+          circleClass = "bg-amber-500/10 text-amber-600 dark:text-amber-500";
+        } else if (variant === "success") {
+          // Value / Deliverables: solid emerald-green check circle
+          cardClass =
+            "bg-surface-2/20 border border-hairline/65 hover:border-emerald-500/35 hover:shadow-[0_4px_20px_-4px_rgba(16,185,129,0.04)]";
+          circleClass = "bg-emerald-500 text-white shadow-sm shadow-emerald-500/25";
+        } else {
+          // Default / Bullets: solid brand-blue check circle
+          cardClass =
+            "bg-surface-2/20 border border-hairline/65 hover:border-brand/35 hover:shadow-[0_4px_20px_-4px_rgba(1,112,185,0.04)]";
+          circleClass = "bg-brand text-white shadow-sm shadow-brand/25";
+        }
+
+        return (
+          <li
+            key={it}
+            className={`group flex items-start gap-4 rounded-2xl p-5 text-[15px] font-medium text-foreground transition-all duration-300 hover:-translate-y-0.5 ${cardClass}`}
+          >
+            <span
+              className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 ${circleClass}`}
+            >
+              <Check className="h-3.5 w-3.5 font-bold" />
+            </span>
+            <span className="leading-relaxed text-foreground/90">{it}</span>
+          </li>
+        );
+      })}
     </ul>
   );
 }

@@ -141,7 +141,7 @@ export function ServicePage({ content }: { content: ServiceContent }) {
           <H2>Sound familiar?</H2>
           <p className="mt-3 max-w-2xl text-ink-dim">The failure modes we see week after week:</p>
           <div className="mt-8">
-            <CheckList items={content.problem} />
+            <CheckList items={content.problem} variant="danger" />
           </div>
         </Section>
       )}
@@ -169,7 +169,7 @@ export function ServicePage({ content }: { content: ServiceContent }) {
         <Section className="pt-0">
           <H2>{content.sectionHeadings?.deliverables ?? "What you get"}</H2>
           <div className="mt-8">
-            <CheckList items={content.deliverables} />
+            <CheckList items={content.deliverables} variant="success" />
           </div>
         </Section>
       )}
