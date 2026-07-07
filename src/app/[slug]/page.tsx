@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "Location not found | Leadweb",
     };
   }
-  const headData = locationHead(content, `/location/${content.slug}/`);
+  const headData = locationHead(content, `/${content.slug}/`);
   const meta: Record<string, string> = {};
 
   headData.meta.forEach((m: Record<string, string | undefined>) => {
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (m.name === "description" && m.content) meta.description = m.content;
   });
 
-  const canonical = headData.links?.[0]?.href || `/location/${content.slug}/`;
+  const canonical = headData.links?.[0]?.href || `/${content.slug}/`;
 
   return {
     title: meta.title,

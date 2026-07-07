@@ -40,7 +40,7 @@ export default function LocationHubPage() {
               return (
                 <Link
                   key={slug}
-                  to="/location/$slug"
+                  to="/$slug"
                   params={{ slug }}
                   className="group rounded-2xl border border-hairline bg-surface/50 p-5 transition-colors hover:border-brand/60"
                 >

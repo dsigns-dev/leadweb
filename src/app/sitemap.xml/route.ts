@@ -59,7 +59,7 @@ const entries: SitemapEntry[] = [
   },
   { path: "/location/", changefreq: "monthly", priority: "0.7" },
   ...locations.map((l) => ({
-    path: `/location/${l.slug}/`,
+    path: `/${l.slug}/`,
     changefreq: "monthly" as const,
     priority: "0.8",
   })),
