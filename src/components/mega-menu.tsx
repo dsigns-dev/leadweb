@@ -113,7 +113,7 @@ const panels: Panel[] = [
           const slug = `${svc.slugPrefix}-${c.citySlug}`;
           const loc = locations.find((l) => l.slug === slug);
           if (!loc) return null;
-          return { label: c.city, to: `/location/${slug}`, desc: c.state };
+          return { label: c.city, to: `/${slug}`, desc: c.state };
         })
         .filter((x): x is { label: string; to: string; desc: string } => x !== null),
     })),

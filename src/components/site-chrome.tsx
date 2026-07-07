@@ -209,11 +209,11 @@ function SiteFooter() {
         <FooterCol
           title="Locations"
           links={[
-            ["Sydney", "/location/google-ads-agency-sydney"],
-            ["Melbourne", "/location/google-ads-agency-melbourne"],
-            ["Brisbane", "/location/google-ads-agency-brisbane"],
-            ["Perth", "/location/google-ads-agency-perth"],
-            ["Adelaide", "/location/google-ads-agency-adelaide"],
+            ["Sydney", "/google-ads-agency-sydney"],
+            ["Melbourne", "/google-ads-agency-melbourne"],
+            ["Brisbane", "/google-ads-agency-brisbane"],
+            ["Perth", "/google-ads-agency-perth"],
+            ["Adelaide", "/google-ads-agency-adelaide"],
           ]}
         />
       </div>

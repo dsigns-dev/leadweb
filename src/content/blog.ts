@@ -682,7 +682,7 @@ export const posts: BlogPost[] = [
         { label: "SEO service", to: "/services/seo", desc: "Ranking work that ties to revenue" },
         {
           label: "SEO agency Sydney",
-          to: "/location/seo-agency-sydney",
+          to: "/seo-agency-sydney",
           desc: "Local-market SEO playbook",
         },
         {
