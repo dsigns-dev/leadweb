@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "Category not found | Leadweb",
     };
   }
-  const title = `${cat.name} — Blog Articles | Leadweb`;
+  const title = `${cat.name} — Blog Articles | Leadweb Marketing`;
   const description = `Read every Leadweb article filed under ${cat.name}. Practical, data-backed guides for Australian business owners.`;
   return {
     title,

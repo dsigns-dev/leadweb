@@ -25,7 +25,7 @@ export const locationServices: {
       "Call tracking + lead-quality scoring",
       "Landing pages purpose-built for each campaign",
     ],
-    metaTitle: (c) => `Google Ads Agency ${c} | Leadweb`,
+    metaTitle: (c) => `Google Ads Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} Google Ads management with weekly optimisation, transparent reporting and no lock-in contracts.`,
     h1: (c) => `Google Ads agency in ${c} for owners who are done overpaying for leads.`,
@@ -43,7 +43,7 @@ export const locationServices: {
       "Monthly revenue-first reporting, not vanity dashboards",
       "Month-to-month after the first 90 days",
     ],
-    metaTitle: (c) => `Digital Marketing Agency ${c} | Leadweb`,
+    metaTitle: (c) => `Digital Marketing Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} digital marketing agency covering SEO, Google Ads, social and web. Revenue-first reporting, no lock-in.`,
     h1: (c) => `Digital marketing agency in ${c} that ties every channel to booked revenue.`,
@@ -61,7 +61,12 @@ export const locationServices: {
       "Local pack and map optimisation for service-area businesses",
       "Monthly reporting on rankings, traffic and enquiries",
     ],
-    metaTitle: (c) => `SEO Agency ${c} | Leadweb`,
+    metaTitle: (c) => {
+      if (c === "Sydney") return "SEO Agency Sydney | Technical SEO, Local SEO and Content SEO";
+      if (c === "Melbourne") return "SEO Agency Melbourne | Rank organically and generate leads";
+      if (c === "Brisbane") return "SEO Agency Brisbane | Rank in targeted locations for your services";
+      return `SEO Agency ${c} | Leadweb Marketing`;
+    },
     metaDescription: (c) =>
       `${c} SEO agency ranking service businesses on revenue-moving terms. Technical, on-page, content and local pack — all in-house.`,
     h1: (c) => `SEO agency in ${c} for owners who want rankings tied to revenue.`,
@@ -79,7 +84,7 @@ export const locationServices: {
       "CRM handover so nothing gets dropped",
       "Reported on cost per booked job, not cost per click",
     ],
-    metaTitle: (c) => `Lead Generation Agency ${c} | Leadweb`,
+    metaTitle: (c) => `Lead Generation Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} lead generation agency. Paid, SEO, landing pages and call tracking engineered to book qualified jobs — not clicks.`,
     h1: (c) => `Lead generation for ${c} businesses — measured in booked jobs.`,
@@ -97,7 +102,7 @@ export const locationServices: {
       "Real-time delivery to your phone, email or CRM",
       "30-day notice, no long contracts",
     ],
-    metaTitle: (c) => `Pay Per Lead ${c} | Leadweb`,
+    metaTitle: (c) => `Pay Per Lead ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `Pay Per Lead in ${c}. Exclusive, qualified leads delivered in real time. You only pay for the leads, not the process.`,
     h1: (c) => `Pay Per Lead in ${c}. Only pay for the leads — not the process to get them.`,

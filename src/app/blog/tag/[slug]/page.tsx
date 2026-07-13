@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "Tag not found | Leadweb",
     };
   }
-  const title = `${tag.name} — Blog Tag | Leadweb`;
+  const title = `${tag.name} — Blog Tag | Leadweb Marketing`;
   const description = `Every Leadweb article tagged ${tag.name}. Practical growth reads for Australian business owners.`;
   return {
     title,

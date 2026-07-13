@@ -4,11 +4,11 @@ import { LeadForm } from "@/components/lead-form";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Leadweb — Sydney Digital Marketing Agency",
+  title: "Contact Leadweb — Digital Marketing and Lead Generation Agency",
   description:
     "Book a 20-minute strategy call. We'll audit your current lead flow, spot the leaks, and give you a plan you can action.",
   openGraph: {
-    title: "Contact Leadweb — Sydney Digital Marketing Agency",
+    title: "Contact Leadweb — Digital Marketing and Lead Generation Agency",
     description: "Book a strategy call with a Sydney-based team that ships every week.",
     url: "/contact-us/",
   },

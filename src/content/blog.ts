@@ -84,7 +84,7 @@ export const posts: BlogPost[] = [
   {
     slug: "lead-generation-for-australian-businesses",
     title: "Lead Generation for Australian Businesses in 2026: What Actually Works Now",
-    metaTitle: "Lead Generation Australia 2026 — What Actually Works | Leadweb",
+    metaTitle: "Lead Generation Australia 2026 — What Actually Works | Leadweb Marketing",
     metaDescription:
       "A no-fluff guide to lead generation for Australian business owners. Real benchmarks, channel mix, and the moves that separate a $30 lead from a $300 one.",
     excerpt:
@@ -254,7 +254,7 @@ export const posts: BlogPost[] = [
   {
     slug: "pay-per-lead-vs-retainer",
     title: "Pay Per Lead vs Retainer Agency: Which Model Actually Delivers ROI?",
-    metaTitle: "Pay Per Lead vs Retainer — Which Delivers ROI? | Leadweb",
+    metaTitle: "Pay Per Lead vs Retainer — Which Delivers ROI? | Leadweb Marketing",
     metaDescription:
       "A CFO-friendly breakdown of pay-per-lead vs monthly retainer agencies. Cost per lead maths, risk profile, and when each model wins.",
     excerpt:
@@ -402,7 +402,7 @@ export const posts: BlogPost[] = [
   {
     slug: "google-ads-for-small-business",
     title: "Google Ads for Small Business: Stop Burning Budget on the Wrong Keywords",
-    metaTitle: "Google Ads for Small Business Australia | Leadweb",
+    metaTitle: "Google Ads for Small Business Australia | Leadweb Marketing",
     metaDescription:
       "How Australian small-business owners can cut their Google Ads spend by 30-50% while getting more booked jobs. Real tactics, no jargon.",
     excerpt:
@@ -551,7 +551,7 @@ export const posts: BlogPost[] = [
   {
     slug: "seo-in-2026-ai-overviews-and-eeat",
     title: "SEO in 2026: Ranking with AI Overviews, E-E-A-T and Fewer Clicks",
-    metaTitle: "SEO in 2026 — AI Overviews & E-E-A-T Guide | Leadweb",
+    metaTitle: "SEO in 2026 — AI Overviews & E-E-A-T Guide | Leadweb Marketing",
     metaDescription:
       "AI Overviews are eating the top of Google. Here's how Australian businesses are still winning organic traffic — and turning it into booked jobs.",
     excerpt:
@@ -697,7 +697,7 @@ export const posts: BlogPost[] = [
   {
     slug: "digital-marketing-strategy-that-books-jobs",
     title: "The Digital Marketing Strategy That Actually Books Jobs (Not Just Clicks)",
-    metaTitle: "Digital Marketing Strategy That Books Jobs | Leadweb",
+    metaTitle: "Digital Marketing Strategy That Books Jobs | Leadweb Marketing",
     metaDescription:
       "A booked-job-first framework for digital marketing. Skip the vanity metrics and build a system that ties every dollar back to revenue.",
     excerpt:
@@ -826,7 +826,7 @@ export const posts: BlogPost[] = [
   {
     slug: "cost-per-lead-benchmarks-australia",
     title: "Cost Per Lead Benchmarks Across Australian Industries (2026 Data)",
-    metaTitle: "Cost Per Lead Benchmarks Australia 2026 | Leadweb",
+    metaTitle: "Cost Per Lead Benchmarks Australia 2026 | Leadweb Marketing",
     metaDescription:
       "Real cost-per-lead benchmarks across Australian trades, health, legal, real estate and professional services. Know what you should be paying.",
     excerpt:
@@ -964,7 +964,7 @@ export const posts: BlogPost[] = [
   {
     slug: "local-seo-for-tradies",
     title: "Local SEO for Tradies: How to Dominate Your Suburb on Google",
-    metaTitle: "Local SEO for Tradies Australia | Leadweb",
+    metaTitle: "Local SEO for Tradies Australia | Leadweb Marketing",
     metaDescription:
       "The exact local SEO playbook Australian tradies are using to rank in the Google Map Pack and beat HiPages listings in their suburb.",
     excerpt:
@@ -1095,7 +1095,7 @@ export const posts: BlogPost[] = [
   {
     slug: "meta-ads-for-service-businesses",
     title: "Meta Ads for Service Businesses: From Scroll to Booked Call",
-    metaTitle: "Meta Ads for Australian Service Businesses | Leadweb",
+    metaTitle: "Meta Ads for Australian Service Businesses | Leadweb Marketing",
     metaDescription:
       "How Australian service businesses turn Facebook and Instagram scrolls into booked calls — with real CPL benchmarks and creative that converts.",
     excerpt:
@@ -1230,7 +1230,7 @@ export const posts: BlogPost[] = [
   {
     slug: "growth-marketing-vs-digital-marketing",
     title: "Growth Marketing vs Digital Marketing: What's the Actual Difference?",
-    metaTitle: "Growth Marketing vs Digital Marketing — Explained | Leadweb",
+    metaTitle: "Growth Marketing vs Digital Marketing — Explained | Leadweb Marketing",
     metaDescription:
       "Growth marketing and digital marketing aren't the same thing. Here's the difference, when each matters, and which one you need first.",
     excerpt:
@@ -1349,7 +1349,7 @@ export const posts: BlogPost[] = [
   {
     slug: "why-your-website-isnt-converting",
     title: "Why Your Website Isn't Converting (And the 7 Fixes That Actually Matter)",
-    metaTitle: "Why Your Website Isn't Converting — 7 Fixes | Leadweb",
+    metaTitle: "Why Your Website Isn't Converting — 7 Fixes | Leadweb Marketing",
     metaDescription:
       "Traffic but no leads? Here are the 7 website fixes that lift conversion for Australian service businesses — most take under an hour.",
     excerpt:

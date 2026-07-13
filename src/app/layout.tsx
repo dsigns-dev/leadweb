@@ -23,13 +23,13 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.leadweb.com.au"),
-  title: "Leadweb — Sydney Digital Marketing That Fills Your Pipeline",
+  title: "Leadweb Marketing I SEO Google Ads Pay Per Lead and More",
   description:
     "Leadweb is a Sydney digital marketing agency for owners who are done chasing leads. Google Ads, SEO, websites and pay-per-lead — measured in booked jobs, not clicks.",
   authors: [{ name: "Leadweb" }],
   openGraph: {
-    siteName: "Leadweb",
-    title: "Leadweb — Sydney Digital Marketing That Fills Your Pipeline",
+    siteName: "Leadweb Marketing",
+    title: "Leadweb Marketing I SEO Google Ads Pay Per Lead and More",
     description:
       "Leadweb is a Sydney digital marketing agency for owners who are done chasing leads. Google Ads, SEO, websites and pay-per-lead — measured in booked jobs, not clicks.",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@leadweb",
-    title: "Leadweb — Sydney Digital Marketing That Fills Your Pipeline",
+    title: "Leadweb Marketing I SEO Google Ads Pay Per Lead and More",
     description:
       "Leadweb is a Sydney digital marketing agency for owners who are done chasing leads. Google Ads, SEO, websites and pay-per-lead — measured in booked jobs, not clicks.",
     images: [

@@ -1,7 +1,7 @@
 import { locations } from "@/content/locations";
 import { posts, categories, tags } from "@/content/blog";
 
-const BASE_URL = "";
+const BASE_URL = "https://www.leadweb.com.au";
 
 interface SitemapEntry {
   path: string;

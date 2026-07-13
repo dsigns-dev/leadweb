@@ -5,11 +5,11 @@ import { locations, locationServices, visibleCityList } from "@/content/location
 import { Link } from "@/components/link";
 
 export const metadata: Metadata = {
-  title: "Google Ads Agency Locations — Leadweb Australia",
+  title: "Google Ads Agency Serviced Cities — Leadweb Marketing",
   description:
     "Leadweb runs Google Ads accounts for owners across Sydney, Melbourne, Brisbane, Perth and Adelaide.",
   openGraph: {
-    title: "Google Ads Agency Locations — Leadweb Australia",
+    title: "Google Ads Agency Serviced Cities — Leadweb Marketing",
     description: "Locations we serve across Australia.",
     url: "/location/",
   },

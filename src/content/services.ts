@@ -44,7 +44,7 @@ export const services: ServiceContent[] = [
     kicker: "Google Ads",
     title: "Google Ads",
     h1: "Google Ads that stop bleeding budget on tyre-kickers.",
-    metaTitle: "Google Ads Management Sydney | Leadweb",
+    metaTitle: "Google Ads Services | Leadweb Marketing",
     metaDescription:
       "Google Ads built around booked jobs, not click reports. Weekly optimisation, tight negative lists, landing pages that convert. Sydney-based.",
     lede: "You already know the tactics. What you need is an operator who ships every week, defends your budget from junk clicks, and reports on money — not impressions.",
@@ -109,7 +109,7 @@ export const services: ServiceContent[] = [
     kicker: "SEO",
     title: "SEO",
     h1: "SEO measured in booked jobs, not backlink counts.",
-    metaTitle: "SEO Agency Sydney | Leadweb",
+    metaTitle: "Search Engine Optimisation | Leadweb Marketing",
     metaDescription:
       "SEO that moves revenue: technical fixes, category and location pages built for conversion, and outreach that earns links that actually rank.",
     lede: "You've had the agency that shipped a PDF audit and a Semrush login. You need one that ships pages, code, and links every month and reports on the money.",
@@ -174,7 +174,7 @@ export const services: ServiceContent[] = [
     kicker: "Web Design",
     title: "Web Design",
     h1: "Websites that look sharp and convert like a landing page.",
-    metaTitle: "Web Design & Development Sydney | Leadweb",
+    metaTitle: "Web Design & Development Sydney | Leadweb Marketing",
     metaDescription:
       "Fast, conversion-focused websites for service businesses. Built to rank on Google and turn traffic into booked jobs.",
     lede: "A brochure site with a form buried in the footer is a lead leak. We design and build sites that treat every page like a landing page.",
@@ -239,7 +239,7 @@ export const services: ServiceContent[] = [
     kicker: "Social Media",
     title: "Social Media Marketing",
     h1: "Social that supports the sale — not just the vanity metrics.",
-    metaTitle: "Social Media Marketing Sydney | Leadweb",
+    metaTitle: "Social Media Marketing Sydney | Leadweb Marketing",
     metaDescription:
       "Organic + paid social that builds trust, warms your list, and shortens the sales cycle. For service businesses that want more than likes.",
     lede: "You don't need another agency posting reels of your logo animating. You need social that shows up in the buyer's feed while they're deciding, and makes the next call easier.",
@@ -304,9 +304,9 @@ export const services: ServiceContent[] = [
     kicker: "Pay Per Lead",
     title: "Pay Per Lead",
     h1: "Pay Per Lead Service",
-    metaTitle: "Pay Per Lead Sydney | Leadweb",
+    metaTitle: "Pay Per Lead | Pay for Results Not the Process I Leadweb",
     metaDescription:
-      "Pay Per Lead service in Sydney. We build the website, run the campaigns, rank on page one — you only pay for genuine phone calls and enquiries. Exclusive to your business.",
+      "Pay Per Lead service Australiawide. We build the website, run the campaigns, rank on page one — you only pay for genuine phone calls and enquiries. Exclusive to your business.",
     lede: "Whether your business is B2B, B2C or just looking for a fast track to growth, we understand you and we've got you covered. Pay per lead is an option that can help everybody - stop paying for uncertainty and start only paying for the leads we get to your business!",
     problem: [
       "91% Of Search Never Click Past Page 1",
@@ -416,7 +416,7 @@ export const services: ServiceContent[] = [
     kicker: "Rent a Website",
     title: "Rent a Website",
     h1: "A ranked, converting website on a monthly rent — no build cost.",
-    metaTitle: "Rent a Website Sydney | Leadweb",
+    metaTitle: "Rent a Website Service | Hire a Top Ranking Website I Leadweb",
     metaDescription:
       "Move into a website we've already built, ranked, and tuned for your industry and postcode. Fixed monthly rent, leads from day one.",
     lede: "We've already done the ranking work in your industry and postcode. Instead of paying $15k to build and 6 months to rank, you move in — and the leads start on day one.",

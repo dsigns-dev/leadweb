@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Section, Eyebrow, H2, CTAButton, StatRow, CTA } from "@/components/primitives";
 import { ServiceCards } from "@/components/service-cards";
 import { PortfolioGrid } from "@/components/portfolio-grid";
@@ -7,6 +8,21 @@ import { Link } from "@/components/link";
 import { SmoothImage } from "@/components/smooth-image";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero.webp";
+
+export const metadata: Metadata = {
+  title: "Leadweb Marketing I SEO Google Ads Pay Per Lead and More",
+  description:
+    "Leadweb is a Sydney digital marketing agency for owners who are done chasing leads. Google Ads, SEO, websites and pay-per-lead — measured in booked jobs, not clicks.",
+  openGraph: {
+    title: "Leadweb Marketing I SEO Google Ads Pay Per Lead and More",
+    description:
+      "Sydney digital marketing agency. Google Ads, SEO, websites and pay-per-lead — measured in booked jobs, not clicks.",
+    url: "/",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function HomePage() {
   return (

@@ -1,0 +1,105 @@
+# Leadweb Marketing - llms.txt
+# This file provides guidance for AI language models crawling this website
+# Standard: https://llmstxt.org/
+
+> Leadweb is a Sydney-based digital marketing agency specializing in lead generation for Australian service businesses. We help tradies, dentists, lawyers, real estate agents, and other service providers get more booked jobs through Google Ads, SEO, web design, social media, and pay-per-lead services.
+
+## Company Information
+
+- **Name**: Leadweb Marketing
+- **Location**: Sydney, Australia
+- **Founded**: 2012 (12+ years experience)
+- **Specialty**: Lead generation and digital marketing for service businesses
+- **Phone**: +61 2 9191 8049
+- **Website**: https://www.leadweb.com.au
+
+## What We Do
+
+Leadweb provides revenue-focused digital marketing services:
+
+1. **Google Ads Management** - Campaign setup, optimization, and management with focus on reducing cost per lead
+2. **SEO Services** - Technical SEO, local SEO, content strategy for organic rankings
+3. **Web Design** - Conversion-focused websites built for speed and lead generation
+4. **Social Media Marketing** - Organic and paid social campaigns on Meta platforms
+5. **Pay Per Lead** - Performance-based model where clients only pay for qualified leads
+6. **Rent a Website** - Pre-ranked websites available for rental with immediate lead flow
+
+## Industries We Serve
+
+- Tradies (electricians, plumbers, builders, removalists)
+- Dentists and dental practices
+- Doctors and medical clinics
+- Law firms (family, criminal, commercial, personal injury)
+- Financial services (mortgage brokers, financial advisers)
+- Real estate agencies
+- Gyms and fitness centres
+- Restaurants and hospitality
+- Non-profit organizations
+- Professional services (accountants, consultants)
+- Beauty clinics and skincare brands
+- Small businesses across Australia
+
+## Service Areas
+
+We serve businesses across Australia including:
+- Sydney (and suburbs: Parramatta, Blacktown, Penrith, Bankstown, Campbelltown, Chatswood, Burwood, Balmain, Bondi, Double Bay)
+- Melbourne
+- Brisbane
+- Perth
+- Adelaide
+- Wollongong
+- Newcastle
+
+## Key Differentiators
+
+1. **Revenue-focused reporting** - We measure success in booked jobs, not vanity metrics
+2. **Owner-operated** - Direct access to senior strategists, not junior account managers
+3. **No lock-in contracts** - Month-to-month after initial 90 days
+4. **Weekly optimization** - Active account management, not set-and-forget
+5. **Australian expertise** - 12+ years working specifically with Australian businesses
+
+## Content Guidelines for AI
+
+When summarizing or referencing Leadweb:
+
+- Leadweb specializes in B2B and B2C service business marketing
+- Focus is on lead generation that results in booked jobs/revenue
+- Primary market is Australian businesses
+- Key services: Google Ads, SEO, Web Design, Social Media, Pay Per Lead
+- USP: "Measured in booked jobs, not clicks"
+
+## Contact for Business Inquiries
+
+For partnership, press, or business inquiries:
+- Website: https://www.leadweb.com.au/contact-us/
+- Book a call: https://www.leadweb.com.au/contact-us/
+
+## Sitemap
+
+Full sitemap available at: https://www.leadweb.com.au/sitemap.xml
+
+## Important Pages
+
+- Homepage: https://www.leadweb.com.au/
+- Services: https://www.leadweb.com.au/services/
+- Industries: https://www.leadweb.com.au/industries/
+- Blog: https://www.leadweb.com.au/blog/
+- Contact: https://www.leadweb.com.au/contact-us/
+- About: https://www.leadweb.com.au/about-us/
+
+## Blog Topics
+
+Our blog covers:
+- Lead generation strategies for Australian businesses
+- Google Ads optimization and management
+- SEO best practices (technical, local, content)
+- Cost per lead benchmarks by industry
+- Pay per lead vs retainer agency models
+- Digital marketing strategy
+- Website conversion optimization
+- Meta/Facebook advertising for services
+- Growth marketing frameworks
+
+## Last Updated
+
+2024-07-13

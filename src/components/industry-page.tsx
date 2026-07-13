@@ -1,5 +1,5 @@
 import type { IndustryContent } from "@/content/industries";
-import { Section, Eyebrow, H1, H2, Lede, CTAButton, CheckList, CTA } from "@/components/primitives";
+import { Section, Eyebrow, H2, Lede, CTAButton, CheckList, CTA } from "@/components/primitives";
 import { LeadForm } from "@/components/lead-form";
 import { PortfolioGrid } from "@/components/portfolio-grid";
 import { Breadcrumbs, breadcrumbJsonLd } from "@/components/breadcrumbs";
@@ -48,7 +48,12 @@ export function IndustryPage({ content }: { content: IndustryContent }) {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start">
           <div>
             <Eyebrow>Industry · {content.name}</Eyebrow>
-            <H1>{content.h1}</H1>
+            <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+              Digital Marketing for {content.name}
+            </h1>
+            <p className="mt-4 text-balance font-display text-2xl font-medium leading-snug text-ink-dim md:text-3xl">
+              {content.h1}
+            </p>
             {heroImage ? (
               <div className="mt-8 overflow-hidden rounded-2xl border border-hairline shadow-lg">
                 <SmoothImage

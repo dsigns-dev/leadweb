@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Section, Eyebrow, H1, H2, Lede, StatRow, CTA } from "@/components/primitives";
 
 export const metadata: Metadata = {
-  title: "About Leadweb — Sydney Digital Marketing Agency",
+  title: "About Leadweb I Digital Marketing and Lead Generation Agency",
   description:
     "Sydney-based digital marketing agency. Owner-operated. Twelve years running paid, SEO and web for Australian businesses that measure success in booked jobs.",
   openGraph: {
-    title: "About Leadweb — Sydney Digital Marketing Agency",
+    title: "About Leadweb I Digital Marketing and Lead Generation Agency",
     description:
       "Owner-operated Sydney agency built for business owners who measure the P&L, not the impressions.",
     url: "/about-us/",

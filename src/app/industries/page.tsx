@@ -5,11 +5,11 @@ import { industries } from "@/content/industries";
 import { Link } from "@/components/link";
 
 export const metadata: Metadata = {
-  title: "Industries We Work With — Leadweb",
+  title: "Industries We Work With — Leadweb Marketing",
   description:
     "Digital marketing playbooks for tradies, dentists, law firms, real estate, financial services, non-profits and more.",
   openGraph: {
-    title: "Industries We Work With — Leadweb",
+    title: "Industries We Work With — Leadweb Marketing",
     description: "Industry-specific playbooks, not generic templates.",
     url: "/industries/",
   },

@@ -15,7 +15,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-tradie",
     name: "Tradies",
     h1: "Digital marketing for tradies who want the phone ringing before smoko.",
-    metaTitle: "Digital Marketing for Tradies Sydney | Leadweb",
+    metaTitle: "Digital Marketing for Tradies | SEO, Google Ads Leads and More",
     metaDescription:
       "Google Ads, SEO and pay-per-lead built for electricians, plumbers, builders, tree loppers and removalists. Booked jobs, not clicks.",
     lede: "You're one of the best on the tools in your postcode. That won't matter until the phone rings. We run the marketing so you can run the crew.",
@@ -50,7 +50,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-dentists",
     name: "Dentists",
     h1: "Marketing for dental practices that fills the chair — not the CRM.",
-    metaTitle: "Digital Marketing for Dentists Sydney | Leadweb",
+    metaTitle: "Digital Marketing for Dentists | Leadweb Marketing",
     metaDescription:
       "SEO, Google Ads and websites for dental practices. New patient enquiries measured against chair utilisation, not vanity metrics.",
     lede: "New patient acquisition costs are up across the industry. We build channels that lower it — and keep it low.",
@@ -84,7 +84,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-doctor",
     name: "Doctors & Clinics",
     h1: "Patient acquisition for GPs, allied health and specialist clinics.",
-    metaTitle: "Digital Marketing for Doctors & Clinics | Leadweb",
+    metaTitle: "Digital Marketing for Doctors & Clinics | Leadweb Marketing",
     metaDescription:
       "Compliant, effective SEO and paid media for medical clinics and allied health providers. New patient bookings, measured properly.",
     lede: "Medical marketing is a compliance-heavy discipline. We run channels that grow patient bookings without putting your registration at risk.",
@@ -114,7 +114,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-financial-services",
     name: "Financial Services",
     h1: "Digital marketing for brokers, advisers and financial services businesses.",
-    metaTitle: "Digital Marketing for Financial Services | Leadweb",
+    metaTitle: "Digital Marketing for Financial Services | Leadweb Marketing",
     metaDescription:
       "Compliant, high-intent lead generation for mortgage brokers, financial advisers and fintech. Qualified enquiries, not lead-gen junk.",
     lede: "In financial services the wrong lead costs more than no lead — it costs an hour of your best adviser. We build channels that surface intent, not just clicks.",
@@ -144,7 +144,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-fitness",
     name: "Fitness & Gyms",
     h1: "Fill your gym floor with members who actually stay.",
-    metaTitle: "Digital Marketing for Gyms & Fitness | Leadweb",
+    metaTitle: "Digital Marketing for Gyms & Fitness | Leadweb Marketing",
     metaDescription:
       "Marketing for gyms, PT studios and boutique fitness. Trial-to-member conversion beats cheap leads, every time.",
     lede: "A cheap trial lead who cancels in week 3 costs you more than a $200 CPL that stays for 18 months. We build funnels that optimise for LTV.",
@@ -174,7 +174,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-law-firms",
     name: "Law Firms",
     h1: "Marketing for law firms that brings in matters, not just enquiries.",
-    metaTitle: "Digital Marketing for Law Firms | Leadweb",
+    metaTitle: "Digital Marketing for Law Firms | Leadweb Marketing",
     metaDescription:
       "SEO, Google Ads and content marketing for family, criminal, commercial and personal injury firms. Qualified matters, tracked to intake.",
     lede: "A tyre-kicker enquiry costs a partner's hour. We build channels that produce matters — not enquiries that go nowhere.",
@@ -204,7 +204,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-non-profits",
     name: "Non-Profits",
     h1: "Marketing for non-profits that grows donations and awareness.",
-    metaTitle: "Digital Marketing for Non-Profits | Leadweb",
+    metaTitle: "Digital Marketing for Non-Profits | Leadweb Marketing",
     metaDescription:
       "Google Ad Grants, SEO and campaign management for Australian non-profits. Every dollar reported against impact.",
     lede: "You get $10k/month in free Google Ad Grants. Most non-profits waste it. We spend it — and add paid + organic layers that grow reach, donations, and volunteer sign-ups.",
@@ -234,7 +234,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-professional-services",
     name: "Professional Services",
     h1: "Marketing for consultancies and professional services firms.",
-    metaTitle: "Digital Marketing for Professional Services | Leadweb",
+    metaTitle: "Digital Marketing for Professional Services | Leadweb Marketing",
     metaDescription:
       "Positioning, SEO and paid media for consultancies, accountants, agencies and B2B service firms.",
     lede: "You sell trust and expertise. Your website and search presence should reflect that — most don't. We fix the credibility gap and turn traffic into introductions.",
@@ -264,7 +264,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-real-estates",
     name: "Real Estate",
     h1: "Digital marketing for real estate that wins listings.",
-    metaTitle: "Digital Marketing for Real Estate | Leadweb",
+    metaTitle: "Digital Marketing for Real Estate | Leadweb Marketing",
     metaDescription:
       "SEO, paid ads and vendor-focused marketing for real estate agencies in Sydney and nationwide.",
     lede: "Buyer leads are cheap. Vendor leads are what pay the office. We build channels that produce appraisals and listings, not just database entries.",
@@ -294,7 +294,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-restaurant",
     name: "Restaurants & Hospitality",
     h1: "Marketing for restaurants that fills tables — mid-week included.",
-    metaTitle: "Digital Marketing for Restaurants | Leadweb",
+    metaTitle: "Digital Marketing for Restaurants and Cafes | Leadweb Marketing",
     metaDescription:
       "Local SEO, Meta ads and Google Business Profile management for restaurants, cafes and hospitality venues.",
     lede: "Fri/Sat books itself. Mon–Wed is where the money is made or lost. We build local marketing that lifts the quiet nights.",
@@ -324,7 +324,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-small-businesses",
     name: "Small Business",
     h1: "Digital marketing for owner-operated small businesses.",
-    metaTitle: "Digital Marketing for Small Business Sydney | Leadweb",
+    metaTitle: "Digital Marketing for Small Business Sydney | Leadweb Marketing",
     metaDescription:
       "Marketing built for owner-operators. Sharp scope, no fluff retainers, results measured in booked jobs and revenue.",
     lede: "You wear five hats already. You need a marketing partner who ships without needing to be managed — and who reports in language that helps you decide, not admire.",
@@ -354,7 +354,7 @@ export const industries: IndustryContent[] = [
     slug: "digital-marketing-for-beauty-skincare",
     name: "Beauty & Skincare",
     h1: "Marketing for beauty clinics, salons and skincare brands.",
-    metaTitle: "Digital Marketing for Beauty & Skincare | Leadweb",
+    metaTitle: "Digital Marketing for Beauty & Skincare | Leadweb Marketing",
     metaDescription:
       "SEO, paid social and content for beauty clinics, salons and DTC skincare brands. Bookings and DTC revenue, measured properly.",
     lede: "Beauty is one of the most competitive local markets and one of the most reward-heavy DTC categories. We run both plays.",

@@ -4,11 +4,11 @@ import { ServiceCards } from "@/components/service-cards";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Services — Leadweb Sydney",
+  title: "Digital Marketing Services — Google Ads SEO and Pay Per Lead",
   description:
     "Google Ads, SEO, websites, social media, pay-per-lead and rent-a-website — every service built to move revenue, not vanity metrics.",
   openGraph: {
-    title: "Digital Marketing Services — Leadweb Sydney",
+    title: "Digital Marketing Services — Google Ads SEO and Pay Per Lead",
     description: "Six services, one standard: measured in booked jobs.",
     url: "/services/",
   },

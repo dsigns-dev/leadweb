@@ -9,7 +9,7 @@ import { Link } from "@/components/link";
 import { SmoothImage } from "@/components/smooth-image";
 
 export const metadata: Metadata = {
-  title: "Blog — Lead Generation, Google Ads & SEO Insights | Leadweb",
+  title: "Blog — Lead Generation, Google Ads & SEO Insights | Leadweb Marketing",
   description:
     "No-fluff guides on lead generation, pay per lead, Google Ads, SEO and digital marketing for Australian business owners. Written by Basheer Padanna.",
   openGraph: {
