@@ -37,12 +37,13 @@ export default function BlogIndexPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: listLd.children }} />
       <Breadcrumbs items={[{ label: "Blog" }]} />
       <section className="container-page pb-8 pt-6 md:pt-10">
-        <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-brand">
+        <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
           Leadweb Blog
-        </div>
-        <h1 className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
-          Straight-talking growth reads for Australian business owners.
         </h1>
+        <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+          Straight-talking growth reads for Australian business owners.
+        </p>
         <p className="mt-5 max-w-2xl text-lg text-ink-dim md:text-xl">
           Lead generation, pay per lead, Google Ads, SEO and digital marketing — written by
           operators who run these campaigns every week.

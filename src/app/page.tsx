@@ -40,14 +40,15 @@ export default function HomePage() {
         <div className="container-page relative pt-16 pb-20 md:pt-24 md:pb-28">
           <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr]">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80">
+              <h1 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80">
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
                 Sydney digital marketing agency
-              </div>
-              <h1 className="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-7xl">
+              </h1>
+              <p className="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-7xl">
                 Your business isn't broken.
                 <br />
                 <span className="text-brand">Your lead flow is.</span>
-              </h1>
+              </p>
               <p className="mt-6 max-w-xl text-lg text-white/75">
                 You've run the ads. You've paid for the SEO. You've had the flashy website built.
                 The phone still doesn't ring the way it should. We fix that — with weekly work,

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Section, Eyebrow, H1, Lede, CTA } from "@/components/primitives";
+import { Section, Lede, CTA } from "@/components/primitives";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { industries } from "@/content/industries";
 import { Link } from "@/components/link";
@@ -23,8 +23,13 @@ export default function IndustriesHubPage() {
     <>
       <Breadcrumbs items={[{ label: "Industries" }]} />
       <Section className="pt-10 md:pt-16">
-        <Eyebrow>Industries</Eyebrow>
-        <H1>Every industry gets its own playbook.</H1>
+        <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
+          Industries
+        </h1>
+        <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+          Every industry gets its own playbook.
+        </p>
         <Lede>
           Ranking a dentist and ranking a tree lopper aren't the same job. Pick your industry to see
           how we run it.

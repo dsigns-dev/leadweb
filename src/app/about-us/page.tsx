@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Section, Eyebrow, H1, H2, Lede, StatRow, CTA } from "@/components/primitives";
+import { Section, H2, Lede, StatRow, CTA } from "@/components/primitives";
 
 export const metadata: Metadata = {
   title: "About Leadweb I Digital Marketing and Lead Generation Agency",
@@ -20,11 +20,14 @@ export default function AboutPage() {
   return (
     <>
       <Section className="pt-16 md:pt-24">
-        <Eyebrow>About Leadweb</Eyebrow>
-        <H1>
+        <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
+          About Leadweb
+        </h1>
+        <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
           Owner-operated. Sydney-based. Built for people who read the P&amp;L, not the impressions
           report.
-        </H1>
+        </p>
         <Lede>
           We started Leadweb because the agency model was broken. Retainers padded with account
           managers who didn't touch the account. Reports written to justify the fee, not to change

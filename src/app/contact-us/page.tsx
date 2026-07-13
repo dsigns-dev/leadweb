@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Section, Eyebrow, H1, Lede } from "@/components/primitives";
+import { Section, Lede } from "@/components/primitives";
 import { LeadForm } from "@/components/lead-form";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
@@ -44,8 +44,13 @@ export default function ContactPage() {
       <Section className="pt-16 md:pt-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-start">
           <div>
-            <Eyebrow>Contact</Eyebrow>
-            <H1>Let's talk about where your leads are actually leaking.</H1>
+            <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
+              Contact
+            </h1>
+            <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+              Let's talk about where your leads are actually leaking.
+            </p>
             <Lede>
               A 20-minute call with a strategist. No pitch deck. No discovery-call theatre. You walk
               away with an action plan whether we work together or not.

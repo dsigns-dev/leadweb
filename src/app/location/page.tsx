@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Section, Eyebrow, H1, Lede, CTA } from "@/components/primitives";
+import { Section, Lede, CTA } from "@/components/primitives";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { locations, locationServices, visibleCityList } from "@/content/locations";
 import { Link } from "@/components/link";
@@ -23,8 +23,13 @@ export default function LocationHubPage() {
     <>
       <Breadcrumbs items={[{ label: "Locations" }]} />
       <Section className="pt-10 md:pt-16">
-        <Eyebrow>Locations</Eyebrow>
-        <H1>Nationwide capability. Local accountability.</H1>
+        <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
+          Locations
+        </h1>
+        <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+          Nationwide capability. Local accountability.
+        </p>
         <Lede>
           Sydney-headquartered, running accounts in every capital. Pick a service and city.
         </Lede>
