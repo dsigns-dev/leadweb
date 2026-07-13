@@ -61,15 +61,14 @@ export const locationServices: {
       "Local pack and map optimisation for service-area businesses",
       "Monthly reporting on rankings, traffic and enquiries",
     ],
-    metaTitle: (c) => {
-      if (c === "Sydney")
-        return "SEO Agency Sydney | Technical SEO, Local SEO and Content SEO";
-      if (c === "Melbourne")
-        return "SEO Agency Melbourne | Rank organically and generate leads";
-      if (c === "Brisbane")
-        return "SEO Agency Brisbane | Rank in targeted locations for your services";
-      return `SEO Agency ${c} | Leadweb Marketing`;
-    },
+    metaTitle: (c) =>
+      c === "Sydney"
+        ? "SEO Agency Sydney | Technical SEO, Local SEO and Content SEO"
+        : c === "Melbourne"
+          ? "SEO Agency Melbourne | Rank organically and generate leads"
+          : c === "Brisbane"
+            ? "SEO Agency Brisbane | Rank in targeted locations for your services"
+            : `SEO Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} SEO agency ranking service businesses on revenue-moving terms. Technical, on-page, content and local pack — all in-house.`,
     h1: (c) => `SEO agency in ${c} for owners who want rankings tied to revenue.`,
