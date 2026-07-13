@@ -28,7 +28,14 @@ export function BlogPostView({ post }: { post: BlogPost }) {
       <Breadcrumbs items={[{ label: "Blog", to: "/blog" }, { label: post.title }]} />
       <article className="container-page grid gap-12 pb-24 pt-8 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0">
-          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-ink-dim">
+          <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
+            {post.kicker}
+          </h1>
+          <p className="text-balance font-display text-4xl font-semibold leading-[1.1] tracking-tight md:text-5xl">
+            {post.title}
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-ink-dim">
             <Link
               to="/blog/category/$slug"
               params={{ slug: slugifyTaxonomy(post.category) }}
@@ -43,9 +50,6 @@ export function BlogPostView({ post }: { post: BlogPost }) {
               <Clock className="h-3.5 w-3.5" /> {post.readMinutes} min read
             </span>
           </div>
-          <h1 className="text-balance font-display text-4xl font-semibold leading-[1.1] tracking-tight md:text-5xl">
-            {post.title}
-          </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-dim">{post.excerpt}</p>
 
           <AuthorInline />

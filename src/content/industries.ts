@@ -13,7 +13,7 @@ export type IndustryContent = {
 
 export const industries: IndustryContent[] = [
   {
-    slug: "digital-marketing-for-tradie",
+    slug: "digital-marketing-for-tradies",
     name: "Tradies",
     kicker: "digital marketing for tradies",
     h1: "Digital marketing for tradies who want the phone ringing before smoko.",
@@ -84,7 +84,7 @@ export const industries: IndustryContent[] = [
     results: "Suitable for solo practices through to multi-location groups.",
   },
   {
-    slug: "digital-marketing-for-doctor",
+    slug: "digital-marketing-for-doctors",
     name: "Doctors & Clinics",
     kicker: "digital marketing for doctors",
     h1: "Patient acquisition for GPs, allied health and specialist clinics.",
@@ -146,7 +146,7 @@ export const industries: IndustryContent[] = [
     results: "Mortgage brokers, financial advisers, accountants, insurance.",
   },
   {
-    slug: "digital-marketing-for-fitness",
+    slug: "digital-marketing-for-fitness-centres",
     name: "Fitness & Gyms",
     kicker: "digital marketing for fitness centres",
     h1: "Fill your gym floor with members who actually stay.",

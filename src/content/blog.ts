@@ -33,6 +33,7 @@ export type BlogSection =
 
 export type BlogPost = {
   slug: string;
+  kicker: string;
   title: string;
   metaTitle: string;
   metaDescription: string;
@@ -83,6 +84,7 @@ const links = (
 export const posts: BlogPost[] = [
   {
     slug: "lead-generation-for-australian-businesses",
+    kicker: "Lead Generation for Australian Businesses",
     title: "Lead Generation for Australian Businesses in 2026: What Actually Works Now",
     metaTitle: "Lead Generation Australia 2026 — What Actually Works | Leadweb Marketing",
     metaDescription:
@@ -253,6 +255,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "pay-per-lead-vs-retainer",
+    kicker: "Pay Lead Vs Monthly Retainer",
     title: "Pay Per Lead vs Retainer Agency: Which Model Actually Delivers ROI?",
     metaTitle: "Pay Per Lead vs Retainer — Which Delivers ROI? | Leadweb Marketing",
     metaDescription:
@@ -401,6 +404,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "google-ads-for-small-business",
+    kicker: "Google Ads for Small Business",
     title: "Google Ads for Small Business: Stop Burning Budget on the Wrong Keywords",
     metaTitle: "Google Ads for Small Business Australia | Leadweb Marketing",
     metaDescription:
@@ -550,6 +554,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "seo-in-2026-ai-overviews-and-eeat",
+    kicker: "SEO 2026",
     title: "SEO in 2026: Ranking with AI Overviews, E-E-A-T and Fewer Clicks",
     metaTitle: "SEO in 2026 — AI Overviews & E-E-A-T Guide | Leadweb Marketing",
     metaDescription:
@@ -696,6 +701,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "digital-marketing-strategy-that-books-jobs",
+    kicker: "digital marketing that actually book jobs",
     title: "The Digital Marketing Strategy That Actually Books Jobs (Not Just Clicks)",
     metaTitle: "Digital Marketing Strategy That Books Jobs | Leadweb Marketing",
     metaDescription:
@@ -825,6 +831,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "cost-per-lead-benchmarks-australia",
+    kicker: "cost per lead generation bench marks",
     title: "Cost Per Lead Benchmarks Across Australian Industries (2026 Data)",
     metaTitle: "Cost Per Lead Benchmarks Australia 2026 | Leadweb Marketing",
     metaDescription:
@@ -963,6 +970,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "local-seo-for-tradies",
+    kicker: "local seo for tradies",
     title: "Local SEO for Tradies: How to Dominate Your Suburb on Google",
     metaTitle: "Local SEO for Tradies Australia | Leadweb Marketing",
     metaDescription:
@@ -1094,6 +1102,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "meta-ads-for-service-businesses",
+    kicker: "meta ads for service based businesses",
     title: "Meta Ads for Service Businesses: From Scroll to Booked Call",
     metaTitle: "Meta Ads for Australian Service Businesses | Leadweb Marketing",
     metaDescription:
@@ -1229,6 +1238,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "growth-marketing-vs-digital-marketing",
+    kicker: "growth marketing vs digital marketing",
     title: "Growth Marketing vs Digital Marketing: What's the Actual Difference?",
     metaTitle: "Growth Marketing vs Digital Marketing — Explained | Leadweb Marketing",
     metaDescription:
@@ -1348,6 +1358,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "why-your-website-isnt-converting",
+    kicker: "websites conversion rate optimisation",
     title: "Why Your Website Isn't Converting (And the 7 Fixes That Actually Matter)",
     metaTitle: "Why Your Website Isn't Converting — 7 Fixes | Leadweb Marketing",
     metaDescription:
