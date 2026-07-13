@@ -11,6 +11,7 @@ export const locationServices: {
   metaTitle: (city: string) => string;
   metaDescription: (city: string) => string;
   h1: (city: string) => string;
+  tagline: (city: string) => string;
 }[] = [
   {
     key: "google-ads",
@@ -28,7 +29,8 @@ export const locationServices: {
     metaTitle: (c) => `Google Ads Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} Google Ads management with weekly optimisation, transparent reporting and no lock-in contracts.`,
-    h1: (c) => `Google Ads agency in ${c} for owners who are done overpaying for leads.`,
+    h1: (c) => `google ads agency ${c === "Newcastle" ? "new castle" : c.toLowerCase()}`,
+    tagline: (c) => `Google Ads agency in ${c} for owners who are done overpaying for leads.`,
   },
   {
     key: "digital-marketing",
@@ -46,7 +48,8 @@ export const locationServices: {
     metaTitle: (c) => `Digital Marketing Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} digital marketing agency covering SEO, Google Ads, social and web. Revenue-first reporting, no lock-in.`,
-    h1: (c) => `Digital marketing agency in ${c} that ties every channel to booked revenue.`,
+    h1: (c) => `digital marketing agency ${c === "Newcastle" ? "new castle" : c.toLowerCase()}`,
+    tagline: (c) => `Digital marketing agency in ${c} that ties every channel to booked revenue.`,
   },
   {
     key: "seo",
@@ -71,7 +74,8 @@ export const locationServices: {
             : `SEO Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} SEO agency ranking service businesses on revenue-moving terms. Technical, on-page, content and local pack — all in-house.`,
-    h1: (c) => `SEO agency in ${c} for owners who want rankings tied to revenue.`,
+    h1: (c) => `seo agency ${c === "Newcastle" ? "new castle" : c.toLowerCase()}`,
+    tagline: (c) => `SEO agency in ${c} for owners who want rankings tied to revenue.`,
   },
   {
     key: "lead-generation",
@@ -89,7 +93,8 @@ export const locationServices: {
     metaTitle: (c) => `Lead Generation Agency ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `${c} lead generation agency. Paid, SEO, landing pages and call tracking engineered to book qualified jobs — not clicks.`,
-    h1: (c) => `Lead generation for ${c} businesses — measured in booked jobs.`,
+    h1: (c) => `lead generation agency ${c === "Newcastle" ? "new castle" : c.toLowerCase()}`,
+    tagline: (c) => `Lead generation for ${c} businesses — measured in booked jobs.`,
   },
   {
     key: "pay-per-lead",
@@ -107,7 +112,8 @@ export const locationServices: {
     metaTitle: (c) => `Pay Per Lead ${c} | Leadweb Marketing`,
     metaDescription: (c) =>
       `Pay Per Lead in ${c}. Exclusive, qualified leads delivered in real time. You only pay for the leads, not the process.`,
-    h1: (c) => `Pay Per Lead in ${c}. Only pay for the leads — not the process to get them.`,
+    h1: (c) => `pay per lead ${c === "Newcastle" ? "new castle" : c.toLowerCase()}`,
+    tagline: (c) => `Pay Per Lead in ${c}. Only pay for the leads — not the process to get them.`,
   },
 ];
 
@@ -118,6 +124,7 @@ export type LocationContent = {
   service: LocationService;
   serviceLabel: string;
   h1: string;
+  tagline: string;
   metaTitle: string;
   metaDescription: string;
   lede: string;
@@ -1022,6 +1029,7 @@ export const locations: LocationContent[] = locationServices.flatMap((svc) =>
     service: svc.key,
     serviceLabel: svc.label,
     h1: svc.h1(c.city),
+    tagline: svc.tagline(c.city),
     metaTitle: svc.metaTitle(c.city),
     metaDescription: svc.metaDescription(c.city),
     lede: `${svc.intro(c.city)} ${c.lede}`,

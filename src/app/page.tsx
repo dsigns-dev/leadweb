@@ -42,7 +42,7 @@ export default function HomePage() {
             <div>
               <h1 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-white/80">
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
-                Sydney digital marketing agency
+                Leadweb Marketing
               </h1>
               <p className="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-7xl">
                 Your business isn't broken.

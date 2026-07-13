@@ -46,7 +46,7 @@ export default function ContactPage() {
           <div>
             <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
-              Contact
+              contact Leadweb Marketing
             </h1>
             <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
               Let's talk about where your leads are actually leaking.
