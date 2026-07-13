@@ -1,13 +1,5 @@
 import type { ServiceContent } from "@/content/services";
-import {
-  Section,
-  H2,
-  Lede,
-  CTAButton,
-  CheckList,
-  FAQ,
-  CTA,
-} from "@/components/primitives";
+import { Section, H2, Lede, CTAButton, CheckList, FAQ, CTA } from "@/components/primitives";
 import { LeadForm } from "@/components/lead-form";
 import { PortfolioGrid } from "@/components/portfolio-grid";
 import { Breadcrumbs, breadcrumbJsonLd } from "@/components/breadcrumbs";
