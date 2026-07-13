@@ -1,5 +1,5 @@
 import type { LocationContent } from "@/content/locations";
-import { Section, Eyebrow, H1, H2, Lede, CTAButton, CheckList, CTA } from "@/components/primitives";
+import { Section, H2, Lede, CTAButton, CheckList, CTA } from "@/components/primitives";
 import { LeadForm } from "@/components/lead-form";
 import { PortfolioGrid } from "@/components/portfolio-grid";
 import { ServiceCards } from "@/components/service-cards";
@@ -12,10 +12,13 @@ export function LocationPage({ content }: { content: LocationContent }) {
       <Section className="pt-16 md:pt-24">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-start">
           <div>
-            <Eyebrow>
+            <h1 className="mb-4 inline-flex items-center gap-2 rounded-full border border-hairline bg-surface/60 px-3 py-1 text-xs font-medium uppercase tracking-widest text-ink-dim">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" />
               {content.serviceLabel} · {content.city}, {content.state}
-            </Eyebrow>
-            <H1>{content.h1}</H1>
+            </h1>
+            <p className="text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+              {content.h1}
+            </p>
             <Lede>{content.lede}</Lede>
             <div className="mt-8 flex flex-wrap gap-3">
               <CTAButton to="/contact-us">Book a call</CTAButton>
