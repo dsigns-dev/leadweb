@@ -3,11 +3,11 @@ import { Section, H2, Lede, CheckList, StatRow, CTA } from "@/components/primiti
 import { LeadForm } from "@/components/lead-form";
 
 export const metadata: Metadata = {
-  title: "Pay Per Lead for Tradies Sydney | Leadweb",
+  title: "Pay Per Lead for Tradies Sydney | Leadweb Marketing",
   description:
     "Exclusive, real-time leads for electricians, plumbers, builders and trades. You only pay for leads that match your service and postcode.",
   openGraph: {
-    title: "Pay Per Lead for Tradies Sydney | Leadweb",
+    title: "Pay Per Lead for Tradies Sydney | Leadweb Marketing",
     description: "Exclusive leads for tradies. No retainer, no ad spend, no shared enquiries.",
     url: "/pay-per-lead-for-tradies/",
   },
