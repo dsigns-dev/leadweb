@@ -62,9 +62,12 @@ export const locationServices: {
       "Monthly reporting on rankings, traffic and enquiries",
     ],
     metaTitle: (c) => {
-      if (c === "Sydney") return "SEO Agency Sydney | Technical SEO, Local SEO and Content SEO";
-      if (c === "Melbourne") return "SEO Agency Melbourne | Rank organically and generate leads";
-      if (c === "Brisbane") return "SEO Agency Brisbane | Rank in targeted locations for your services";
+      if (c === "Sydney")
+        return "SEO Agency Sydney | Technical SEO, Local SEO and Content SEO";
+      if (c === "Melbourne")
+        return "SEO Agency Melbourne | Rank organically and generate leads";
+      if (c === "Brisbane")
+        return "SEO Agency Brisbane | Rank in targeted locations for your services";
       return `SEO Agency ${c} | Leadweb Marketing`;
     },
     metaDescription: (c) =>
