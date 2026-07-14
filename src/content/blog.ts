@@ -94,6 +94,7 @@ export const posts: BlogPost[] = [
     category: "Lead Generation",
     readMinutes: 14,
     publishedAt: "2026-01-14",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "Every week I get on a call with a business owner who says the same thing: \"I know what I'm doing — the phone just isn't ringing like it used to.\" They're usually right on both counts. Lead generation in Australia has changed sharply in the last 24 months, and the tactics that pulled work in 2021 quietly stopped working around late 2024. If you're feeling that shift, this piece is for you.",
@@ -265,6 +266,7 @@ export const posts: BlogPost[] = [
     category: "Pay Per Lead",
     readMinutes: 13,
     publishedAt: "2026-01-20",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         '"Just tell me — should I pay $3,000 a month to an agency, or $100 per lead to a pay-per-lead service?" It\'s the most-asked question I get from business owners in Sydney, and the honest answer is: it depends on four numbers you already know but rarely put on the same page.',
@@ -414,6 +416,7 @@ export const posts: BlogPost[] = [
     category: "Google Ads",
     readMinutes: 14,
     publishedAt: "2026-01-27",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "I've audited close to 900 Google Ads accounts over the last decade. The single most common finding — across trades, dentists, lawyers, gyms — is that 30-50% of the monthly spend is going to keywords that have never produced a booked job. Not a bad lead. Not a lead at all.",
@@ -564,6 +567,7 @@ export const posts: BlogPost[] = [
     category: "SEO",
     readMinutes: 15,
     publishedAt: "2026-02-03",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "Every quarter someone announces the death of SEO. Every quarter, organic search still drives more revenue for Australian service businesses than any other channel. What did change in 2025 — genuinely, meaningfully — is where the click lands.",
@@ -711,6 +715,7 @@ export const posts: BlogPost[] = [
     category: "Digital Marketing",
     readMinutes: 13,
     publishedAt: "2026-02-10",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "There are only three questions a digital marketing strategy has to answer: where does the next enquiry come from, what does it cost, and did it turn into revenue? Everything else — impressions, reach, engagement — is scaffolding that agencies use to sound busy.",
@@ -841,6 +846,7 @@ export const posts: BlogPost[] = [
     category: "Lead Generation",
     readMinutes: 12,
     publishedAt: "2026-02-17",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "The single most useful number for a business owner talking to an agency isn't ROAS, isn't CTR — it's a defensible cost-per-lead range for their industry. Without it you're negotiating blind. So here are the numbers we see across our own book of clients, cross-checked against WordStream ANZ and public data from 2025.",
@@ -980,6 +986,7 @@ export const posts: BlogPost[] = [
     category: "SEO",
     readMinutes: 13,
     publishedAt: "2026-02-24",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "If you're a tradie in Australia, your single most valuable piece of digital real estate isn't your website. It's the three-pack that appears under the map when someone Googles \"plumber near me.\" Own that and the phone rings. Ignore it and you're paying HiPages for the privilege.",
@@ -1112,6 +1119,7 @@ export const posts: BlogPost[] = [
     category: "Digital Marketing",
     readMinutes: 13,
     publishedAt: "2026-03-03",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         'Meta Ads (Facebook + Instagram) get dismissed by service-business owners as "where you buy likes." Which is a shame, because when the offer, creative and audience line up, they produce leads at roughly 40-60% of the Google Ads cost. The catch — and it\'s a real one — is that Meta is a demand-generation channel, not a demand-capture channel. You have to create the want.',
@@ -1248,6 +1256,7 @@ export const posts: BlogPost[] = [
     category: "Growth Marketing",
     readMinutes: 12,
     publishedAt: "2026-03-10",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "Every second agency in Sydney now calls itself a \"growth marketing\" agency. Most of them are running the same Google Ads and SEO they were running five years ago. That's not growth marketing — that's digital marketing with better slides.",
@@ -1368,6 +1377,7 @@ export const posts: BlogPost[] = [
     category: "Digital Marketing",
     readMinutes: 13,
     publishedAt: "2026-03-17",
+    updatedAt: "2026-07-10",
     sections: [
       p(
         "The most common conversation I have with owners running ads goes like this: \"The clicks are cheap enough. The leads just aren't there.\" Nine times out of ten, the problem isn't the ad account. It's the 8 seconds after the click, on the landing page.",

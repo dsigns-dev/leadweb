@@ -113,10 +113,33 @@ export function locationHead(content: LocationContent, path: string) {
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: `Leadweb — ${content.city}`,
-          areaServed: content.city,
-          telephone: "+61-2-9191-8049",
+          "@id": `https://www.leadweb.com.au${path}#business`,
+          name: `Leadweb — ${content.serviceLabel} ${content.city}`,
+          description: content.metaDescription,
           url: `https://www.leadweb.com.au${path}`,
+          telephone: "+61-2-9191-8049",
+          email: "hello@leadweb.com.au",
+          priceRange: "$$",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Suite 611, 150 George Street",
+            addressLocality: "Parramatta",
+            addressRegion: "NSW",
+            postalCode: "2150",
+            addressCountry: "AU",
+          },
+          areaServed: {
+            "@type": "City",
+            name: content.city,
+            containedInPlace: {
+              "@type": "AdministrativeArea",
+              name: content.state,
+            },
+          },
+          sameAs: [
+            "https://www.facebook.com/leadwebmarketing",
+            "https://www.linkedin.com/company/leadweb",
+          ],
         }),
       },
       breadcrumbJsonLd([
