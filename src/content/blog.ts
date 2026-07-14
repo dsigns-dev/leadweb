@@ -701,7 +701,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "digital-marketing-strategy-that-books-jobs",
-    kicker: "digital marketing that actually book jobs",
+    kicker: "Digital Marketing That Actually Books Jobs",
     title: "The Digital Marketing Strategy That Actually Books Jobs (Not Just Clicks)",
     metaTitle: "Digital Marketing Strategy That Books Jobs | Leadweb Marketing",
     metaDescription:
@@ -831,7 +831,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "cost-per-lead-benchmarks-australia",
-    kicker: "cost per lead generation bench marks",
+    kicker: "Cost Per Lead Generation Benchmarks",
     title: "Cost Per Lead Benchmarks Across Australian Industries (2026 Data)",
     metaTitle: "Cost Per Lead Benchmarks Australia 2026 | Leadweb Marketing",
     metaDescription:
@@ -970,7 +970,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "local-seo-for-tradies",
-    kicker: "local seo for tradies",
+    kicker: "Local SEO for Tradies",
     title: "Local SEO for Tradies: How to Dominate Your Suburb on Google",
     metaTitle: "Local SEO for Tradies Australia | Leadweb Marketing",
     metaDescription:
@@ -1102,7 +1102,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "meta-ads-for-service-businesses",
-    kicker: "meta ads for service based businesses",
+    kicker: "Meta Ads for Service-Based Businesses",
     title: "Meta Ads for Service Businesses: From Scroll to Booked Call",
     metaTitle: "Meta Ads for Australian Service Businesses | Leadweb Marketing",
     metaDescription:
@@ -1238,7 +1238,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "growth-marketing-vs-digital-marketing",
-    kicker: "growth marketing vs digital marketing",
+    kicker: "Growth Marketing vs Digital Marketing",
     title: "Growth Marketing vs Digital Marketing: What's the Actual Difference?",
     metaTitle: "Growth Marketing vs Digital Marketing — Explained | Leadweb Marketing",
     metaDescription:
@@ -1358,7 +1358,7 @@ export const posts: BlogPost[] = [
 
   {
     slug: "why-your-website-isnt-converting",
-    kicker: "websites conversion rate optimisation",
+    kicker: "Website Conversion Rate Optimisation",
     title: "Why Your Website Isn't Converting (And the 7 Fixes That Actually Matter)",
     metaTitle: "Why Your Website Isn't Converting — 7 Fixes | Leadweb Marketing",
     metaDescription:

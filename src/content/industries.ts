@@ -15,7 +15,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-tradies",
     name: "Tradies",
-    kicker: "digital marketing for tradies",
+    kicker: "Digital Marketing for Tradies",
     h1: "Digital marketing for tradies who want the phone ringing before smoko.",
     metaTitle: "Digital Marketing for Tradies | SEO, Google Ads Leads and More",
     metaDescription:
@@ -51,7 +51,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-dentists",
     name: "Dentists",
-    kicker: "digital marketing for dentists",
+    kicker: "Digital Marketing for Dentists",
     h1: "Marketing for dental practices that fills the chair — not the CRM.",
     metaTitle: "Digital Marketing for Dentists | Leadweb Marketing",
     metaDescription:
@@ -86,7 +86,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-doctors",
     name: "Doctors & Clinics",
-    kicker: "digital marketing for doctors",
+    kicker: "Digital Marketing for Doctors",
     h1: "Patient acquisition for GPs, allied health and specialist clinics.",
     metaTitle: "Digital Marketing for Doctors & Clinics | Leadweb Marketing",
     metaDescription:
@@ -117,7 +117,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-financial-services",
     name: "Financial Services",
-    kicker: "digital marketing for financial services",
+    kicker: "Digital Marketing for Financial Services",
     h1: "Digital marketing for brokers, advisers and financial services businesses.",
     metaTitle: "Digital Marketing for Financial Services | Leadweb Marketing",
     metaDescription:
@@ -148,7 +148,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-fitness-centres",
     name: "Fitness & Gyms",
-    kicker: "digital marketing for fitness centres",
+    kicker: "Digital Marketing for Fitness Centres",
     h1: "Fill your gym floor with members who actually stay.",
     metaTitle: "Digital Marketing for Gyms & Fitness | Leadweb Marketing",
     metaDescription:
@@ -179,7 +179,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-law-firms",
     name: "Law Firms",
-    kicker: "digital marketing for law firms",
+    kicker: "Digital Marketing for Law Firms",
     h1: "Marketing for law firms that brings in matters, not just enquiries.",
     metaTitle: "Digital Marketing for Law Firms | Leadweb Marketing",
     metaDescription:
@@ -210,7 +210,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-non-profits",
     name: "Non-Profits",
-    kicker: "digital marketing for non profits",
+    kicker: "Digital Marketing for Non-Profits",
     h1: "Marketing for non-profits that grows donations and awareness.",
     metaTitle: "Digital Marketing for Non-Profits | Leadweb Marketing",
     metaDescription:
@@ -241,7 +241,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-professional-services",
     name: "Professional Services",
-    kicker: "digital marketing for professional services",
+    kicker: "Digital Marketing for Professional Services",
     h1: "Marketing for consultancies and professional services firms.",
     metaTitle: "Digital Marketing for Professional Services | Leadweb Marketing",
     metaDescription:
@@ -272,7 +272,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-real-estates",
     name: "Real Estate",
-    kicker: "digital marketing for real estate businesses",
+    kicker: "Digital Marketing for Real Estate Businesses",
     h1: "Digital marketing for real estate that wins listings.",
     metaTitle: "Digital Marketing for Real Estate | Leadweb Marketing",
     metaDescription:
@@ -303,7 +303,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-restaurant",
     name: "Restaurants & Hospitality",
-    kicker: "digital marketing for restaurants and cafes",
+    kicker: "Digital Marketing for Restaurants and Cafes",
     h1: "Marketing for restaurants that fills tables — mid-week included.",
     metaTitle: "Digital Marketing for Restaurants and Cafes | Leadweb Marketing",
     metaDescription:
@@ -334,7 +334,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-small-businesses",
     name: "Small Business",
-    kicker: "digital marketing for small businesses",
+    kicker: "Digital Marketing for Small Businesses",
     h1: "Digital marketing for owner-operated small businesses.",
     metaTitle: "Digital Marketing for Small Business Sydney | Leadweb Marketing",
     metaDescription:
@@ -365,7 +365,7 @@ export const industries: IndustryContent[] = [
   {
     slug: "digital-marketing-for-beauty-skincare",
     name: "Beauty & Skincare",
-    kicker: "digital marketing for beauty clinics",
+    kicker: "Digital Marketing for Beauty Clinics",
     h1: "Marketing for beauty clinics, salons and skincare brands.",
     metaTitle: "Digital Marketing for Beauty & Skincare | Leadweb Marketing",
     metaDescription:
