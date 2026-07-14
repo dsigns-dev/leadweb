@@ -1,11 +1,18 @@
+import type { StaticImageData } from "next/image";
 import authorPhoto from "@/assets/blog/basheer-padanna.webp";
 
-export const author = {
+export const author: {
+  name: string;
+  role: string;
+  bio: string;
+  linkedin: string;
+  photo: StaticImageData;
+} = {
   name: "Basheer Padanna",
   role: "Founder & Lead Strategist, Leadweb Marketing",
   bio: "Basheer has spent 15+ years building lead-generation systems for Australian trades, health, legal and professional services businesses. He founded Leadweb — the digital marketing and lead generation division of DSIGNS Australia Pty Limited — to give owners a straight-talking alternative to agencies that hide behind vanity metrics. Every campaign he runs is judged on booked jobs, cost per lead, and revenue in the bank.",
   linkedin: "https://www.linkedin.com/in/basheerpadanna",
-  photo: authorPhoto.src,
+  photo: authorPhoto,
 };
 
 export type BlogSection =

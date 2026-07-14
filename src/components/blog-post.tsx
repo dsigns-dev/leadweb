@@ -61,6 +61,7 @@ export function BlogPostView({ post }: { post: BlogPost }) {
               width={1280}
               height={800}
               priority
+              sizes="(max-width: 1024px) 100vw, 65vw"
               className="h-auto w-full object-cover"
             />
           </div>
@@ -108,6 +109,7 @@ export function BlogPostView({ post }: { post: BlogPost }) {
                         alt={rp.title}
                         width={1280}
                         height={800}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 22vw"
                         className="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.04]"
                       />
                     </div>
@@ -321,10 +323,10 @@ function SidebarEnquiry() {
   return (
     <div className="relative overflow-hidden rounded-2xl shadow-xl shadow-brand/20">
       <SmoothImage
-        src={sidebarPhoto.src}
+        src={sidebarPhoto}
         alt="Australian tradie taking a booking call"
-        width={640}
-        height={720}
+        fill
+        sizes="320px"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/20" />
@@ -457,6 +459,7 @@ function SidebarArchive({ currentSlug }: { currentSlug: string }) {
                   alt=""
                   width={64}
                   height={64}
+                  sizes="56px"
                   className="h-14 w-14 flex-none rounded-md object-cover"
                 />
                 <div className="min-w-0">

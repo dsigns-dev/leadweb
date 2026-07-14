@@ -1,4 +1,5 @@
 import type { IndustryContent } from "@/content/industries";
+import type { StaticImageData } from "next/image";
 import { Section, H2, Lede, CTAButton, CheckList, CTA } from "@/components/primitives";
 import { LeadForm } from "@/components/lead-form";
 import { PortfolioGrid } from "@/components/portfolio-grid";
@@ -21,12 +22,12 @@ import restaurantImg from "@/assets/industries/restaurant.webp";
 import smallBizImg from "@/assets/industries/small-businesses.webp";
 import beautyImg from "@/assets/industries/beauty-skincare.webp";
 
-const HERO_IMAGES: Record<string, { src: string }> = {
-  "digital-marketing-for-tradie": tradieImg,
+const HERO_IMAGES: Record<string, StaticImageData> = {
+  "digital-marketing-for-tradies": tradieImg,
   "digital-marketing-for-dentists": dentistsImg,
-  "digital-marketing-for-doctor": doctorImg,
+  "digital-marketing-for-doctors": doctorImg,
   "digital-marketing-for-financial-services": financialImg,
-  "digital-marketing-for-fitness": fitnessImg,
+  "digital-marketing-for-fitness-centres": fitnessImg,
   "digital-marketing-for-law-firms": lawImg,
   "digital-marketing-for-non-profits": nonProfitImg,
   "digital-marketing-for-professional-services": proServicesImg,
@@ -57,12 +58,13 @@ export function IndustryPage({ content }: { content: IndustryContent }) {
             {heroImage ? (
               <div className="mt-8 overflow-hidden rounded-2xl border border-hairline shadow-lg">
                 <SmoothImage
-                  src={heroImage.src}
+                  src={heroImage}
                   alt={`Digital marketing for ${content.name.toLowerCase()} — Leadweb`}
                   width={1600}
                   height={1000}
                   priority
-                  className="h-full w-full object-cover aspect-[16/10]"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  className="h-full w-full object-cover aspect-16/10"
                 />
               </div>
             ) : null}

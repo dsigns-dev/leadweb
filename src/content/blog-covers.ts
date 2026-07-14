@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import leadGen from "@/assets/blog/covers/lead-gen.webp";
 import ppl from "@/assets/blog/covers/ppl-vs-retainer.webp";
 import googleAds from "@/assets/blog/covers/google-ads.webp";
@@ -9,7 +10,7 @@ import metaAds from "@/assets/blog/covers/meta-ads.webp";
 import growth from "@/assets/blog/covers/growth.webp";
 import websiteCro from "@/assets/blog/covers/website-cro.webp";
 
-export const covers: Record<string, { src: string }> = {
+export const covers: Record<string, StaticImageData> = {
   "lead-generation-for-australian-businesses": leadGen,
   "pay-per-lead-vs-retainer": ppl,
   "google-ads-for-small-business": googleAds,
@@ -22,6 +23,6 @@ export const covers: Record<string, { src: string }> = {
   "why-your-website-isnt-converting": websiteCro,
 };
 
-export function coverFor(slug: string): string {
-  return (covers[slug] ?? leadGen).src;
+export function coverFor(slug: string): StaticImageData {
+  return covers[slug] ?? leadGen;
 }

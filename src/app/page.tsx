@@ -67,11 +67,12 @@ export default function HomePage() {
                 style={{ borderRadius: "48% 12% 42% 12% / 18% 42% 18% 42%" }}
               >
                 <SmoothImage
-                  src={heroImage.src}
+                  src={heroImage}
                   alt="Australian tradies on a job site — the kind of business Leadweb generates leads for"
                   width={1600}
                   height={1280}
                   priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="h-full w-full object-cover"
                 />
                 <div

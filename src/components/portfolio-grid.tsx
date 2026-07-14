@@ -10,10 +10,12 @@ export function PortfolioGrid({ limit }: { limit?: number }) {
           key={p.name}
           className="group overflow-hidden rounded-2xl border border-hairline bg-surface/50"
         >
-          <div className="aspect-[4/3] overflow-hidden bg-background/40">
+          <div className="relative aspect-4/3 overflow-hidden bg-background/40">
             <SmoothImage
               src={p.image}
               alt={`${p.name} — case study`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
             />
           </div>

@@ -3,16 +3,17 @@ import tileCall from "@/assets/tile-call.webp";
 import tileTeam from "@/assets/tile-team.webp";
 import { Section, H2 } from "@/components/primitives";
 import { SmoothImage } from "@/components/smooth-image";
+import type { StaticImageData } from "next/image";
 
 export type Tile = {
   kicker: string;
   title: string;
   body?: string;
-  image?: string;
+  image?: StaticImageData;
   tone: "brand" | "warm" | "green";
 };
 
-const IMAGES = [tileAnalytics, tileCall, tileTeam];
+const IMAGES: StaticImageData[] = [tileAnalytics, tileCall, tileTeam];
 
 const TONE: Record<Tile["tone"], string> = {
   brand: "from-[hsl(202,98%,25%)]/85 via-[hsl(202,98%,37%)]/70 to-[hsl(202,98%,45%)]/60",
@@ -42,10 +43,10 @@ export function ImageTiles({
             className="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]"
           >
             <SmoothImage
-              src={t.image ?? IMAGES[i % IMAGES.length].src}
+              src={t.image ?? IMAGES[i % IMAGES.length]}
               alt=""
-              width={1280}
-              height={960}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="absolute inset-0 h-full w-full object-cover transition-all duration-700 group-hover:scale-105"
             />
             <div

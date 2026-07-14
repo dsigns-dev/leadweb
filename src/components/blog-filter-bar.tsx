@@ -105,12 +105,13 @@ export function PostGrid({
           params={{ slug: p.slug }}
           className="group flex flex-col overflow-hidden rounded-2xl border border-hairline bg-surface/40 transition-colors hover:border-brand/60"
         >
-          <div className="aspect-[16/10] overflow-hidden bg-surface">
+          <div className="aspect-16/10 overflow-hidden bg-surface">
             <SmoothImage
               src={coverFor(p.slug)}
               alt={p.title}
               width={1280}
               height={800}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="h-full w-full object-cover transition-all duration-500 group-hover:scale-[1.04]"
             />
           </div>
