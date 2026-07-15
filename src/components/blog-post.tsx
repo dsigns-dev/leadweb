@@ -249,7 +249,7 @@ function SectionRenderer({ section }: { section: BlogSection }) {
           </div>
           <ul className="grid gap-3 sm:grid-cols-3">
             {section.items.map((it) => (
-              <li key={it.to}>
+              <li key={`${it.to}-${it.label}`}>
                 <Link
                   to={it.to}
                   className="group block rounded-xl border border-hairline bg-background/60 p-4 transition-colors hover:border-brand/60"
