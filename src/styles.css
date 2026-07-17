@@ -237,3 +237,82 @@
     transform: translateX(-800%);
   }
 }
+
+/* ─── Scrolling screenshot showcase cards ─── */
+
+/* Card Container */
+.wds-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 330px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Optional Desktop Hover Effect: lift card up slightly */
+@media (hover: hover) and (pointer: fine) {
+  .wds-card:hover {
+    transform: translateY(-6px);
+  }
+  .wds-card:hover .wds-card__viewport {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Rounded-corner Viewport showing a preview window of the website */
+.wds-card__viewport {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 640px) {
+  .wds-card__viewport {
+    height: 315px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wds-card__viewport {
+    height: 400px;
+  }
+}
+
+/* The full-page screenshot image itself */
+.wds-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  /* Scroll Up transitions */
+  transition: transform var(--scroll-duration-up, 4s) linear;
+}
+
+/* Scroll Down transition target */
+.wds-card__image.is-scrolling {
+  transform: translate3d(0, var(--max-translate, 0px), 0);
+  /* Scroll Down transitions */
+  transition: transform var(--scroll-duration-down, 4s) linear;
+}
+
+/* Client title styling */
+.wds-card__name {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--foreground);
+}
