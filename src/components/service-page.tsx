@@ -195,7 +195,7 @@ export function ServicePage({ content }: { content: ServiceContent }) {
       <Section className="pt-0">
         <H2>Recent work</H2>
         <div className="mt-10">
-          <PortfolioGrid limit={6} />
+          <PortfolioGrid limit={6} serviceSlug={content.slug} />
         </div>
       </Section>
       <Section className="pt-0">
