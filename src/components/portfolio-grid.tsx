@@ -1,5 +1,12 @@
 import { portfolio } from "@/content/portfolio";
 import { SmoothImage } from "@/components/smooth-image";
+import { ShowcaseCard } from "@/components/showcase-card";
+
+const pplShowcaseItems = [
+  { name: "Interstate Removalists Sydney", image: "/images/payperlead/1.webp" },
+  { name: "Removalists Sydney", image: "/images/payperlead/2.webp" },
+  { name: "NDIS Providers Sydney", image: "/images/payperlead/3.webp" },
+];
 
 export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceSlug?: string }) {
   let items = portfolio;
@@ -87,6 +94,62 @@ export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceS
           "Targeted local SEO campaign focusing on high-end residential painting, commercial decorating, and custom finishes.",
       },
     ];
+  } else if (serviceSlug === "social-media-marketing") {
+    items = [
+      {
+        name: "GPS Vehicle Inspections",
+        category: "Automotive Inspections",
+        image: "/images/social-media/gps-inspect-all-makes-models.avif",
+        outcome:
+          "Social media creatives promoting mobile pre-purchase vehicle inspections across all makes and models.",
+      },
+      {
+        name: "Zee Care",
+        category: "NDIS Provider",
+        image: "/images/social-media/zee-care-treated-like-person.avif",
+        outcome:
+          "Person-centred social media campaigns highlighting compassionate NDIS care and individual support.",
+      },
+      {
+        name: "Six Brothers Removalists",
+        category: "Removalist Services",
+        image: "/images/social-media/six-brothers-backloading-removals.avif",
+        outcome:
+          "Scroll-stopping social creatives for backloading and interstate removals across Sydney.",
+      },
+      {
+        name: "OSAN Ability",
+        category: "NDIS Provider",
+        image: "/images/social-media/osan-looking-for-ndis-provider.avif",
+        outcome:
+          "Engaging social posts driving NDIS participant enquiries for disability support and community services.",
+      },
+      {
+        name: "OSAN Ability",
+        category: "NDIS Provider Support",
+        image: "/images/social-media/osan-looking-for-ndis-provider.webp",
+        outcome:
+          "Targeted NDIS Facebook campaigns promoting personalized support plans and group programs.",
+      },
+      {
+        name: "Zee Care",
+        category: "NDIS Support Services",
+        image: "/images/social-media/zee-care-independence-support.webp",
+        outcome:
+          "Independence-focused social content promoting daily living and community participation support.",
+      },
+    ];
+  }
+
+  // Pay Per Lead and Rent Website use the scrolling showcase cards
+  if (serviceSlug === "pay-per-lead" || serviceSlug === "rent-website") {
+    return (
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {pplShowcaseItems.map((p) => (
+          <ShowcaseCard key={p.image} name={p.name} image={p.image} />
+        ))}
+      </div>
+    );
   }
 
   if (limit) {
@@ -98,6 +161,7 @@ export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceS
       {items.map((p) => {
         const isGoogleAds = p.image.includes("/google-ads/");
         const isSeo = p.image.includes("/seo/");
+        const isSocial = p.image.includes("/social-media/");
         const isGpsSeo = p.name === "GPS Vehicle Inspections" && isSeo;
 
         let aspectClass = "aspect-4/3";
@@ -105,6 +169,8 @@ export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceS
           aspectClass = "aspect-[3/4]";
         } else if (isGoogleAds) {
           aspectClass = "aspect-4/3"; // Lesser card size
+        } else if (isSocial) {
+          aspectClass = "aspect-square"; // 1:1 for social media creatives
         }
 
         let imageFitClass = "object-cover";
@@ -116,14 +182,16 @@ export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceS
           } else {
             imageFitClass = "object-contain object-top bg-white";
           }
+        } else if (isSocial) {
+          imageFitClass = "object-cover object-center bg-white";
         }
 
         return (
           <figure
-            key={p.name}
+            key={p.image}
             className="flex flex-col h-full group overflow-hidden rounded-2xl border border-hairline bg-surface/50"
           >
-            {isGoogleAds || isSeo ? (
+            {isGoogleAds || isSeo || isSocial ? (
               <div
                 className={`relative ${aspectClass} overflow-hidden bg-white w-full border-b border-hairline`}
               >
@@ -153,7 +221,9 @@ export function PortfolioGrid({ limit, serviceSlug }: { limit?: number; serviceS
               <div className="mt-1 font-display text-lg font-semibold text-foreground">
                 {p.name}
               </div>
-              <p className="mt-1 text-sm text-ink-dim">{p.outcome}</p>
+              {!isGoogleAds && !isSeo && !isSocial ? null : (
+                <p className="mt-1 text-sm text-ink-dim">{p.outcome}</p>
+              )}
             </figcaption>
           </figure>
         );
