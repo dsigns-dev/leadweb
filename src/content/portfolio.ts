@@ -5,81 +5,79 @@ export type PortfolioItem = {
   outcome: string;
 };
 
-// Client screenshots reused from the existing Leadweb WordPress media library so
-// case-study visuals stay authentic — no misrepresenting brand imagery.
-const wp = (p: string) => `https://www.leadweb.com.au/wp-content/uploads/${p}`;
+const PORTFOLIO_IMAGE = (file: string) => `/images/portfolio/${file}`;
 
 export const portfolio: PortfolioItem[] = [
   {
-    name: "Advanced Tree Lopping",
-    category: "Tradies · SEO + Google Ads",
-    image: wp("2023/03/Advanced-Tree-Lopping-0.png"),
-    outcome: "Consistent lead flow across Greater Sydney.",
+    name: "Headway ABI Australia",
+    category: "NDIS · Website + SEO",
+    image: PORTFOLIO_IMAGE("headway-abi.webp"),
+    outcome: "Consistent participant enquiries and brand growth.",
   },
   {
-    name: "Jabbs Excavation",
-    category: "Tradies · Website + SEO",
-    image: wp("2023/03/Jabbs-Excavation.png"),
-    outcome: "Ranked page one for excavation across NSW.",
-  },
-  {
-    name: "Six Brothers Removalist",
-    category: "Removalists · Ads + Social",
-    image: wp("2023/03/removalist.sydney.png"),
-    outcome: "Interstate lead volume up, cost per lead down.",
-  },
-  {
-    name: "GPS Vehicle Inspections",
-    category: "Automotive · Google Ads",
-    image: wp("2023/03/GPS-Vehicle-Inspections-0.png"),
-    outcome: "Fully booked mobile inspection schedule.",
-  },
-  {
-    name: "Satisfinance",
+    name: "Demore Lending",
     category: "Finance · Website + SEO",
-    image: wp("2023/03/Satisfinance.png"),
-    outcome: "Broker enquiries qualified before the call.",
-  },
-  {
-    name: "Care Remedy",
-    category: "NDIS · SEO + Social",
-    image: wp("2023/03/Care-Remedy-0.png"),
-    outcome: "Participant enquiries across Sydney + Melbourne.",
-  },
-  {
-    name: "The Castor Master",
-    category: "E-commerce · SEO",
-    image: wp("2023/03/The-Castor-Master-0.png"),
-    outcome: "Ranked #1 for core commercial terms.",
-  },
-  {
-    name: "Takeaway Packaging",
-    category: "Wholesale · Website",
-    image: wp("2023/03/takeawaypackaging.png"),
-    outcome: "Wholesale enquiries direct from search.",
-  },
-  {
-    name: "Deep Slice Pizza",
-    category: "Hospitality · Local Marketing",
-    image: wp("2023/03/deepslicepizza-1.png"),
-    outcome: "Mid-week covers up 30%.",
-  },
-  {
-    name: "AJ Engineering",
-    category: "Consultancy · Website + SEO",
-    image: wp("2023/03/AJ-Engineering-Consultancy-0.png"),
-    outcome: "Enterprise enquiries direct from organic.",
+    image: PORTFOLIO_IMAGE("demore-lending.avif"),
+    outcome: "Qualified commercial finance enquiries direct from search.",
   },
   {
     name: "OSAN Ability",
     category: "NDIS · Social + Content",
-    image: wp("2023/04/Social-Media-for-OSAN-Ability.jpg"),
+    image: PORTFOLIO_IMAGE("osan-ability.avif"),
     outcome: "Community and participant reach across VIC.",
   },
   {
-    name: "RMB Constructions",
-    category: "Construction · SEO + Ads",
-    image: wp("2023/04/Digital-Marketing-for-RMB-Constructions.jpg"),
-    outcome: "Commercial project enquiries every week.",
+    name: "The T-Spoon Cafe",
+    category: "Hospitality · Local SEO",
+    image: PORTFOLIO_IMAGE("tspoon.avif"),
+    outcome: "Mid-week covers up 30%.",
+  },
+  {
+    name: "ADL99 Cybersecurity",
+    category: "Technology · Website + SEO",
+    image: PORTFOLIO_IMAGE("ADL99.avif"),
+    outcome: "Enterprise cybersecurity leads direct from organic search.",
+  },
+  {
+    name: "GPS Vehicle Inspections",
+    category: "Automotive · Google Ads",
+    image: PORTFOLIO_IMAGE("gps.avif"),
+    outcome: "Fully booked mobile inspection schedule.",
+  },
+  {
+    name: "Two Brothers Removalist",
+    category: "Removalists · SEO + Google Ads",
+    image: PORTFOLIO_IMAGE("two-brothers.avif"),
+    outcome: "Consistent moving enquiries across Sydney.",
+  },
+  {
+    name: "Care Remedy",
+    category: "NDIS · SEO + Social",
+    image: PORTFOLIO_IMAGE("care-remedy.avif"),
+    outcome: "Participant enquiries across Sydney + Melbourne.",
+  },
+  {
+    name: "Satisfinance",
+    category: "Finance · Website + SEO",
+    image: PORTFOLIO_IMAGE("satisfinance.avif"),
+    outcome: "Broker enquiries qualified before the call.",
+  },
+  {
+    name: "AJ Engineering",
+    category: "Consultancy · Website + SEO",
+    image: PORTFOLIO_IMAGE("aj-engineering.avif"),
+    outcome: "Enterprise enquiries direct from organic.",
+  },
+  {
+    name: "Jose Journeys",
+    category: "NDIS · Website + SEO",
+    image: PORTFOLIO_IMAGE("jose-journeys.avif"),
+    outcome: "NDIS travel and support participant enquiries.",
+  },
+  {
+    name: "Jabbs Excavation",
+    category: "Tradies · Website + SEO",
+    image: PORTFOLIO_IMAGE("jabbs.avif"),
+    outcome: "Ranked page one for excavation across NSW.",
   },
 ];
