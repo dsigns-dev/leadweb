@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Barlow, Barlow_Condensed } from "next/font/google";
 import "../styles.css";
 import { SiteChrome } from "@/components/site-chrome";
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -96,6 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SiteChrome>{children}</SiteChrome>
+        <GoogleTagManager gtmId="GTM-MXNXWQ8T" />
       </body>
     </html>
   );
