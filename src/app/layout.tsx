@@ -96,8 +96,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <SiteChrome>{children}</SiteChrome>
         <GoogleTagManager gtmId="GTM-MXNXWQ8T" />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
