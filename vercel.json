@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "leadweb.com.au"
+        }
+      ],
+      "destination": "https://www.leadweb.com.au/:path*",
+      "permanent": true
+    }
+  ]
+}
